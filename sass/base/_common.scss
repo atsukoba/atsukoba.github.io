@@ -1,0 +1,59 @@
+/*base */
+
+html {
+  width: 100%;
+  background-color: #fff;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: serif;
+  word-break: break-all;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.card {
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+
+  &__post {
+    &__tag,
+    &__date {
+      font-size: 12px;
+      line-height: 12px;
+      border-radius: 2.5px;
+      padding: 1.5px 5px;
+    }
+    &__tag {
+      color: white;
+      background-color: rgb(248, 66, 66);
+    }
+    &__date {
+      margin-left: 10px;
+      color: white;
+      background-color: grey;
+    }
+    &__title {
+      margin: 5px 0;
+      font-size: 25px;
+    }
+    &__description {
+    }
+    &__readmore {
+
+    }
+  }
+}

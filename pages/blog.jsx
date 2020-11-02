@@ -1,34 +1,32 @@
 import React from "react";
-import Head from "next/head";
 import matter from "gray-matter";
 import Link from "next/link";
+import Container from "../components/Container";
 
 const Index = ({ data, title, description }) => {
-  const RealData = data.map((blog) => matter(blog));
-  const ListItems = RealData.map((listItem) => listItem.data);
+  const ListItems = data
+    .map((blog) => matter(blog))
+    .map((listItem) => listItem.data);
 
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <meta name="Description" content={description}></meta>
-        <title>{title}</title>
-      </Head>
-      <h1>My First Blog ✍ </h1>
+    <Container>
+      <h1>Blog ✍ </h1>
       <div>
         <ul>
           {ListItems.map((blog, i) => (
-            <li key={i}>
+            <li className="card card__post" key={i}>
+              <span className="card__post__tag">{blog.tag}</span>
+              <span className="card__post__date">{blog.date}</span>
               <Link href={`/${blog.slug}`}>
-                <a>{blog.title}</a>
+                <h1 className="card__post__title">{blog.title}</h1>
               </Link>
-              <p>{blog.description}</p>
+              <p className="card__post__description">{blog.description}</p>
+              <a href="">Read More...</a>
             </li>
           ))}
         </ul>
       </div>
-    </>
+    </Container>
   );
 };
 

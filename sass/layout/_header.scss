@@ -1,0 +1,57 @@
+/* Header */
+
+header {
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+
+  .logo {
+    position: fixed;
+    width: 150px;
+    top: 30px;
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: black;
+      width: 16px;
+      height: 35px;
+    }
+    a {
+      width: fit-content;
+      position: absolute;
+      top: 0px;
+      left: 30px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+    span {
+      position: absolute;
+      font-size: 13px;
+      line-height: 13px;
+      top: 24px;
+      left: 30px;
+      color: $font-grey;
+      display: block;
+    }
+  }
+
+  nav {
+    @include breakpoint("<=medium") {
+      position: absolute;
+      top: -300px;
+    }
+    @include breakpoint(">medium") {
+      padding-top: 35px;
+      margin-left: 150px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        a {
+        }
+      }
+    }
+  }
+}

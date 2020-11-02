@@ -1,21 +1,14 @@
 import react from "react";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-
-const CodeBlock = ({ language, value }) => {
-  return (
-    <SyntaxHighlighter showLineNumbers={true} language={language}>
-      {value}
-    </SyntaxHighlighter>
-  );
-};
+import CodeBlock from "../components/CodeBlock";
+import Container from "../components/Container";
 
 const Blog = ({ content, data }) => {
   const frontmatter = data;
 
   return (
-    <>
+    <Container>
       <h1>{frontmatter.title}</h1>
       <h3>{frontmatter.description}</h3>
       <ReactMarkdown
@@ -23,7 +16,7 @@ const Blog = ({ content, data }) => {
         source={content}
         renderers={{ code: CodeBlock }}
       />
-    </>
+    </Container>
   );
 };
 

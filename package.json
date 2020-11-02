@@ -1,5 +1,5 @@
 {
-  "name": "markdown-blogs",
+  "name": "next-my-0blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "gray-matter": "^4.0.2",
     "next": "9.5.3",
+    "next-sass": "^1.0.3",
+    "node-sass": "^4.14.1",
     "raw-loader": "^4.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+html {
+  * {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  a, p {
+    color: $font-black;
+    text-decoration: none;
+  }
+  @include breakpoint('>=xlarge') {
+    
+  }
+  @include breakpoint('large') {
+
+  }
+  @include breakpoint('medium') {
+
+  }
+  @include breakpoint('small') {
+
+  }
+  @include breakpoint('<=xsmall') {
+
+  }
+}
