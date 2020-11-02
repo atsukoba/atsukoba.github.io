@@ -1,7 +1,11 @@
 /* Header */
 
 header {
+  width: 100%;
   height: 85px;
+  margin: 0 auto;
+  max-width: $contents-max-width;
+  position: relative;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(1px);
 
@@ -9,6 +13,7 @@ header {
     position: fixed;
     width: 150px;
     top: 30px;
+    font-family: "Noto Sans JP", sans-serif;
     &::before {
       content: "";
       display: inline-block;
@@ -36,13 +41,13 @@ header {
   }
 
   nav {
-    @include breakpoint("<=medium") {
+    @include breakpoint("<=small") {
       position: absolute;
       top: -300px;
     }
-    @include breakpoint(">medium") {
+    @include breakpoint(">small") {
       padding-top: 35px;
-      margin-left: 150px;
+      margin-left: 300px;
     }
     ul {
       display: flex;

@@ -1,26 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 
 html {
   * {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
   }
-  a, p {
+  a,
+  p {
     color: $font-black;
     text-decoration: none;
   }
-  @include breakpoint('>=xlarge') {
-    
+  @include breakpoint(">=medium") {
+    // 920px ~
+    h1 {
+      font-size: 32px;
+      line-height: 1.5;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 28px;
+      line-height: 1.5;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 1.75;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    p,
+    li,
+    a {
+      font-size: 18px;
+      line-height: 36px;
+    }
   }
-  @include breakpoint('large') {
-
+  @include breakpoint("<=small") {
+    // ~ 480px
+    h1 {
+      font-size: 24px;
+      line-height: 1.5;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 22px;
+      line-height: 1.5;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 1.75;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    p,
+    li,
+    a {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
-  @include breakpoint('medium') {
 
-  }
-  @include breakpoint('small') {
-
-  }
-  @include breakpoint('<=xsmall') {
-
+  @include breakpoint("xsmall") {
   }
 }

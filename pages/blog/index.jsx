@@ -1,7 +1,7 @@
 import React from "react";
 import matter from "gray-matter";
 import Link from "next/link";
-import Container from "../components/Container";
+import Container from "../../components/Container";
 
 const Index = ({ data, title, description }) => {
   const ListItems = data
@@ -17,11 +17,9 @@ const Index = ({ data, title, description }) => {
             <li className="card card__post" key={i}>
               <span className="card__post__tag">{blog.tag}</span>
               <span className="card__post__date">{blog.date}</span>
-              <Link href={`/${blog.slug}`}>
-                <h1 className="card__post__title">{blog.title}</h1>
-              </Link>
+              <h1 className="card__post__title">{blog.title}</h1>
               <p className="card__post__description">{blog.description}</p>
-              <a href="">Read More...</a>
+              <a href={`/blog/${blog.slug}`}>Read More...</a>
             </li>
           ))}
         </ul>
@@ -33,7 +31,7 @@ const Index = ({ data, title, description }) => {
 export default Index;
 
 export async function getStaticProps() {
-  const siteData = await import(`../config.json`);
+  const siteData = await import(`../../config.json`);
   const fs = require("fs");
 
   const files = fs.readdirSync(`${process.cwd()}/content`, "utf-8");

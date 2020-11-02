@@ -2,7 +2,7 @@
 slug: blog-two
 title: My Second Blog
 description: This Description Of My Second Blog.
-date: 25-September-2020
+date: 2020/11/1
 tag: 技術
 ---
 
