@@ -4,6 +4,7 @@ title: Doc2VecとOptunaを使ったSVMでのテキスト分類を作ってみた
 description: Optunaを使ってみる練習として，Doc2Vecを用いてテキスト分類をするやつをサクっと書きました。
 author: Imran Irshad
 tag: 技術
+keyVisual: shonandai.jpg
 date: 2019/02/15
 ---
 

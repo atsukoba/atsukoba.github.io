@@ -1,9 +1,10 @@
 ---
 slug: tech-blog-sample
-title: atsuya.xyzをリニューアルしました。
-description: このブログをデザインしnext.jsで作成。Markdownで書けるブログをAWS ECSへCIする。
+title: ブログのデザインから実装，公開まで。
+description: このブログをデザインしNext.jsでMarkdownブログを自作してAWSでホスティング，公開するまでをまとめました。
 date: 30-September-2020
 tag: 技術
+keyVisual: shonandai.jpg
 ---
 
 - a

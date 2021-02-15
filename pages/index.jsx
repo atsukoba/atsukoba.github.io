@@ -7,7 +7,7 @@ import MeSketch from "../components/MeSketch";
 const Index = () => {
   return (
     <Container>
-      
+      <MeSketch width={300} height={500} />
     </Container>
   );
 };

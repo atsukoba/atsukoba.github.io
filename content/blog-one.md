@@ -4,6 +4,7 @@ title: My First Blog
 description: This Description Of My First Blog.
 date: 2020/11/1
 tag: 技術
+keyVisual: shonandai.jpg
 ---
 
 # h1

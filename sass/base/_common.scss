@@ -16,10 +16,12 @@ body {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .container {
   width: 100%;
+  margin: 0 auto;
   max-width: $contents-max-width;
 
   @include breakpoint(">small") {
@@ -34,12 +36,27 @@ img {
 }
 
 .breadcrumb {
-  margin: 30px 0;
-  font-size: 12px;
+  margin: 15px 0;
   span {
+    font-size: 12px;
     margin: 0 3px;
   }
   a {
-    color: blue;
+    font-size: 12px;
+    color: darkblue;
+  }
+}
+
+.key-visual {
+  width: 100vw;
+  height: 50vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include breakpoint(">small") {
+    margin-left: -30px;
+  }
+  @include breakpoint("<=small") {
+    margin-left: -15px;
   }
 }
