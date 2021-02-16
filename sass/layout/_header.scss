@@ -1,15 +1,16 @@
 /* Header */
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 75px;
-  margin: 0 auto;
-  max-width: $contents-max-width;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(1px);
 
   .container {
+    width: 100%;
+    max-width: $contents-max-width;
+    margin: 0 auto;
     position: relative;
   }
 
@@ -83,12 +84,12 @@ header {
     }
     @include breakpoint(">small") {
       padding-top: 35px;
-      margin-left: 300px;
       ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
         li {
+          margin-left: 30px;
           a {
             svg {
               width: 20px;

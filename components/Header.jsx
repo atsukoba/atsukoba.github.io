@@ -29,13 +29,13 @@ class Header extends Component {
         <header>
           <Container>
             <a href="/" className="logo">
-              <h1>atsuya.xyz</h1>
+              <h1>atsuya koba</h1>
               <span>v0.0.1</span>
             </a>
             <nav className={this.state.navOpen ? "opened" : ""}>
               <ul>
                 <li>
-                  <a href="/about">About Me</a>
+                  <a href="/about">Me</a>
                 </li>
                 <li>
                   <a href="/blog">Blog</a>
@@ -44,7 +44,7 @@ class Header extends Component {
                   <a href="/cv">CV</a>
                 </li>
                 <li>
-                  <a href="/works">Porfolio</a>
+                  <a href="/works">Portfolio</a>
                 </li>
                 <li>
                   <a

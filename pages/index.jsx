@@ -14,7 +14,7 @@ const Index = ({ data, title, description }) => {
       <div>
         <ul className="card_container">
           {ListItems.map((blog, i) => (
-            <Link href={`/portofolio/${blog.slug}`}>
+            <Link href={`/works/${blog.slug}`}>
               <li className="card card__post" key={i}>
                 <div
                   className="card__post__keyVisual"
@@ -36,7 +36,7 @@ const Index = ({ data, title, description }) => {
                       </span>
                     ))}
                   <p className="card__post__description">{blog.description}</p>
-                  <a href={`/portofolio/${blog.slug}`}>Read More...</a>
+                  <a href={`/works/${blog.slug}`}>Read More...</a>
                 </div>
               </li>
             </Link>
