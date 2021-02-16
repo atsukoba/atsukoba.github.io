@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import Container from "./Container";
 import "../sass/style.scss";
+import {
+  faTwitter,
+  faGithub,
+  faSoundcloud,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Header extends Component {
   constructor(props) {
@@ -37,16 +44,47 @@ class Header extends Component {
                   <a href="/cv">CV</a>
                 </li>
                 <li>
-                  <a href="/portfolio">Porfolio</a>
+                  <a href="/works">Porfolio</a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/atsuyakoba">Twitter</a>
+                  <a
+                    href="https://twitter.com/atsuyakoba"
+                    target="_blank"
+                    rel="nofollow"
+                    className="icon"
+                  >
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
                 </li>
                 <li>
-                  <a href="https://github.com/atsukoba">GitHub</a>
+                  <a
+                    href="https://facebook.com/atsuyakoba"
+                    target="_blank"
+                    rel="nofollow"
+                    className="icon"
+                  >
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
                 </li>
                 <li>
-                  <a href="https://soundcloud.com/atsuyakoba">SoundCloud</a>
+                  <a
+                    href="https://github.com/atsukoba"
+                    target="_blank"
+                    rel="nofollow"
+                    className="icon"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://soundcloud.com/atsuyakoba"
+                    target="_blank"
+                    rel="nofollow"
+                    className="icon"
+                  >
+                    <FontAwesomeIcon icon={faSoundcloud} />
+                  </a>
                 </li>
               </ul>
             </nav>

@@ -5,7 +5,7 @@ header {
   height: 75px;
   margin: 0 auto;
   max-width: $contents-max-width;
-  position: relative;
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(1px);
 
@@ -47,17 +47,19 @@ header {
 
   nav {
     @include breakpoint("<=small") {
-      width: 100%;
-      height: 500px;
+      width: 100vw;
+      height: 100vh;
       background-color: rgba(0, 0, 0, 0.75);
-      padding: 75px 30px 15px;
+      padding: 75px 15px 15px;
       position: absolute;
-      top: -500px;
+      top: 0;
       left: 0;
+      display: none;
       will-change: top;
       transition: top 0.25s ease-in;
+
       &.opened {
-        top: 0;
+        display: block;
       }
 
       ul {
@@ -72,6 +74,9 @@ header {
             width: 100%;
             font-size: 20px;
             color: whitesmoke;
+            svg {
+              width: 20px;
+            }
           }
         }
       }
@@ -85,6 +90,9 @@ header {
         justify-content: space-between;
         li {
           a {
+            svg {
+              width: 20px;
+            }
           }
         }
       }

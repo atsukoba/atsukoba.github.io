@@ -2,25 +2,50 @@ import React from "react";
 import matter from "gray-matter";
 import Link from "next/link";
 import Container from "../../components/Container";
+import { format } from "../../helpers/dateFormat";
 
 const Index = ({ data, title, description }) => {
   const ListItems = data
     .map((blog) => matter(blog))
-    .map((listItem) => listItem.data);
+    .map((listItem) => listItem.data)
+    .sort(function (a, b) {
+      return -(a.date - b.date);
+    });
+
+  console.dir(ListItems);
 
   return (
     <Container>
       <h1>Blog ✍ </h1>
       <div>
-        <ul>
+        <ul className="card_container">
           {ListItems.map((blog, i) => (
-            <li className="card card__post" key={i}>
-              <span className="card__post__tag">{blog.tag}</span>
-              <span className="card__post__date">{blog.date}</span>
-              <h1 className="card__post__title">{blog.title}</h1>
-              <p className="card__post__description">{blog.description}</p>
-              <a href={`/blog/${blog.slug}`}>Read More...</a>
-            </li>
+            <Link href={`/blog/${blog.slug}`}>
+              <li className="card card__post" key={i}>
+                <div
+                  className="card__post__keyVisual"
+                  style={{
+                    backgroundImage: `url(/images/${
+                      blog.keyVisual || "undefined.jpg"
+                    })`,
+                  }}
+                ></div>
+                <div className="card__post__info_wrapper">
+                  <span className="card__post__category">{blog.category}</span>
+                  <span className="card__post__date">{format(blog.date)}</span>
+                  <h1 className="card__post__title">{blog.title}</h1>
+                  {/* Tags */}
+                  {blog.tags &&
+                    blog.tags.map((tag, l) => (
+                      <span className="card__post__tag" key={l}>
+                        {tag}
+                      </span>
+                    ))}
+                  <p className="card__post__description">{blog.description}</p>
+                  <a href={`/blog/${blog.slug}`}>Read More...</a>
+                </div>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
@@ -33,18 +58,16 @@ export default Index;
 export async function getStaticProps() {
   const siteData = await import(`../../config.json`);
   const fs = require("fs");
-
-  const files = fs.readdirSync(`${process.cwd()}/content`, "utf-8");
-
+  const files = fs.readdirSync(`${process.cwd()}/blogs`, "utf-8");
   const blogs = files.filter((fn) => fn.endsWith(".md"));
+  console.log(blogs);
 
   // const data = matter(content.default);
   const data = blogs.map((blog) => {
-    const path = `${process.cwd()}/content/${blog}`;
+    const path = `${process.cwd()}/blogs/${blog}`;
     const rawContent = fs.readFileSync(path, {
       encoding: "utf-8",
     });
-
     return rawContent;
   });
 

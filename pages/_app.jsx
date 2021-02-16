@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="./img/favicon.ico" />
       </Head>
       <Header />
+      <div style={{ width: "100vw", paddingTop: "60px" }}></div>
       <Component {...pageProps} />
       <Footer />
     </Fragment>

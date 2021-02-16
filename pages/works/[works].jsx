@@ -5,7 +5,6 @@ import CodeBlock from "../../components/CodeBlock";
 import Container from "../../components/Container";
 import Breadcrumb from "../../components/Breadcrumb";
 import KeyVisual from "../../components/KeyVisual";
-import { format } from "../../helpers/dateFormat";
 
 const Blog = ({ content, data }) => {
   return (
@@ -19,7 +18,7 @@ const Blog = ({ content, data }) => {
         />
         <KeyVisual imageFileName={data.keyVisual} />
         <h1>{data.title}</h1>
-        <span>{format(data.date)}</span>
+        <span>{data.date}</span>
         <p>{data.description}</p>
         <ReactMarkdown
           escapeHtml={false}

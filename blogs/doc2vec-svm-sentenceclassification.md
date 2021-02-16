@@ -1,19 +1,20 @@
 ---
-slug: coding-blog
 title: Doc2VecとOptunaを使ったSVMでのテキスト分類を作ってみた
-description: Optunaを使ってみる練習として，Doc2Vecを用いてテキスト分類をするやつをサクっと書きました。
-author: Imran Irshad
-tag: 技術
-keyVisual: shonandai.jpg
-date: 2019/02/15
+slug: doc2vec-svm-sentenceclassification
+date: 2019-02-15 23:20:16
+category: Tech
+tags: [ML, NLP]
 ---
 
-出力はモデルの accuracy，F1 と，`pyplot`での Confusion Matrix を出力します。
+Optunaを使ってみる練習として，Doc2Vecを用いてテキスト分類をするやつをサクっと書きました。  
+出力はモデルのaccuracy，F1と，`pyplot`でのConfusion Matrixを出力します。
+
+<!-- more -->
 
 ラベルデータを下記の形で用意します
 
 | DOCUMENT_FILE_NAME(id) | LABEL(labels) |
-| :--------------------: | :-----------: |
+|:----------------------:|:-------------:|
 |        foo.txt         |      bar      |
 |        bar.txt         |      foo      |
 
@@ -22,6 +23,7 @@ date: 2019/02/15
 各テキストデータ毎に分類を行います。
 
 ### Source ([github](https://gist.github.com/atsukoba/b33967dee47e92f58240a3a544d0650b))
+
 
 ```python
 # Author: Atsuya Kobayashi @atsuya_kobayashi
