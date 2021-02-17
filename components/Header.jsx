@@ -33,6 +33,10 @@ class Header extends Component {
               <span>v0.0.1</span>
             </a>
             <nav className={this.state.navOpen ? "opened" : ""}>
+              <a href="/" className="logo nav-logo">
+                <h1>atsuya koba</h1>
+                <span>v0.0.1</span>
+              </a>
               <ul>
                 <li>
                   <a href="/about">Me</a>
@@ -43,9 +47,9 @@ class Header extends Component {
                 <li>
                   <a href="/cv">CV</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/works">Portfolio</a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://twitter.com/atsuyakoba"

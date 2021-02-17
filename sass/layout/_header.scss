@@ -63,6 +63,15 @@ header {
         display: block;
       }
 
+      .logo {
+        // logo on sp opened nav menu
+        color: white;
+
+        &::before {
+          background-color: white;
+        }
+      }
+
       ul {
         display: flex;
         flex-direction: column;
@@ -84,6 +93,9 @@ header {
     }
     @include breakpoint(">small") {
       padding-top: 35px;
+      .logo {
+        display: none;
+      }
       ul {
         display: flex;
         flex-direction: row;
