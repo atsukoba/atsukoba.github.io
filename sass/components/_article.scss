@@ -1,5 +1,57 @@
-article {
+.article {
   width: 100%;
   max-width: $article-max-width;
   margin: 0 auto;
+
+  padding-bottom: 60px;
+
+  &__breadcrumb {
+  }
+
+  &__info {
+    color: $font-grey;
+    margin: 15px 0;
+  }
+
+  &__category {
+    margin-right: 10px;
+  }
+
+  &__date {
+    margin-right: 10px;
+  }
+
+  &__tags {
+    margin: 20px 0 40px;
+  }
+
+  &__title {
+    margin: 20px 0 20px;
+  }
+
+  &__description {
+  }
+
+  hr {
+    display: block;
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  &__contents {
+    iframe {
+      width: 100%;
+    }
+
+    h1 {
+    }
+
+    p {
+    }
+
+    img {
+      width: 100%;
+      margin: 30px auto;
+    }
+  }
 }

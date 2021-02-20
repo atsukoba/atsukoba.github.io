@@ -3,43 +3,22 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Container from "../components/Container";
 import { format } from "../helpers/dateFormat";
+import Card from "../components/Card";
 
 const Index = ({ data, title, description }) => {
   const ListItems = data
     .map((blog) => matter(blog))
-    .map((listItem) => listItem.data);
+    .map((listItem) => listItem.data)
+    .sort(function (a, b) {
+      return -(a.date - b.date);
+    });
 
   return (
     <Container>
       <div>
         <ul className="card_container">
           {ListItems.map((blog, i) => (
-            <Link href={`/works/${blog.slug}`}>
-              <li className="card card__post" key={i}>
-                <div
-                  className="card__post__keyVisual"
-                  style={{
-                    backgroundImage: `url(/images/${
-                      blog.keyVisual || "undefined.jpg"
-                    })`,
-                  }}
-                ></div>
-                <div className="card__post__info_wrapper">
-                  <span className="card__post__category">{blog.category}</span>
-                  <span className="card__post__date">{format(blog.date)}</span>
-                  <h1 className="card__post__title">{blog.title}</h1>
-                  {/* Tags */}
-                  {blog.tags &&
-                    blog.tags.map((tag, l) => (
-                      <span className="card__post__tag" key={l}>
-                        {tag}
-                      </span>
-                    ))}
-                  <p className="card__post__description">{blog.description}</p>
-                  <a href={`/works/${blog.slug}`}>Read More...</a>
-                </div>
-              </li>
-            </Link>
+            <Card directory="works" post={blog} key={i} />
           ))}
         </ul>
       </div>
@@ -53,12 +32,12 @@ export async function getStaticProps() {
   const siteData = await import(`../config.json`);
   const fs = require("fs");
   const files = fs.readdirSync(`${process.cwd()}/portfolio`, "utf-8");
-  const blogs = files.filter((fn) => fn.endsWith(".md"));
-  console.log(blogs);
+  const works = files.filter((fn) => fn.endsWith(".md"));
+  console.log(works);
 
   // const data = matter(content.default);
-  const data = blogs.map((blog) => {
-    const path = `${process.cwd()}/portfolio/${blog}`;
+  const data = works.map((work) => {
+    const path = `${process.cwd()}/portfolio/${work}`;
     const rawContent = fs.readFileSync(path, {
       encoding: "utf-8",
     });

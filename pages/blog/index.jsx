@@ -1,8 +1,9 @@
 import React from "react";
 import matter from "gray-matter";
 import Link from "next/link";
+import Card from "../../components/Card";
 import Container from "../../components/Container";
-import { format } from "../../helpers/dateFormat";
+import { useEffect } from "react";
 
 const Index = ({ data, title, description }) => {
   const ListItems = data
@@ -12,7 +13,31 @@ const Index = ({ data, title, description }) => {
       return -(a.date - b.date);
     });
 
-  console.dir(ListItems);
+  const handleScroll = (header, title) => {
+    return () => {
+      if (title.getBoundingClientRect().top < 45) {
+        header.classList.add("jostled");
+      } else {
+        header.classList.remove("jostled");
+      }
+    };
+  };
+
+  useEffect(() => {
+    if (document) {
+      const header = document.querySelector("header .logo");
+      const title = document.querySelector(".container > h1");
+
+      if (header && title && window) {
+        const handler = handleScroll(header, title);
+        window.addEventListener("scroll", handler);
+        return () => {
+          window.removeEventListener("scroll", handler);
+          header.classList.remove("jostled");
+        };
+      }
+    }
+  });
 
   return (
     <Container>
@@ -20,32 +45,7 @@ const Index = ({ data, title, description }) => {
       <div>
         <ul className="card_container">
           {ListItems.map((blog, i) => (
-            <Link href={`/blog/${blog.slug}`}>
-              <li className="card card__post" key={i}>
-                <div
-                  className="card__post__keyVisual"
-                  style={{
-                    backgroundImage: `url(/images/${
-                      blog.keyVisual || "undefined.jpg"
-                    })`,
-                  }}
-                ></div>
-                <div className="card__post__info_wrapper">
-                  <span className="card__post__category">{blog.category}</span>
-                  <span className="card__post__date">{format(blog.date)}</span>
-                  <h1 className="card__post__title">{blog.title}</h1>
-                  {/* Tags */}
-                  {blog.tags &&
-                    blog.tags.map((tag, l) => (
-                      <span className="card__post__tag" key={l}>
-                        {tag}
-                      </span>
-                    ))}
-                  <p className="card__post__description">{blog.description}</p>
-                  <a href={`/blog/${blog.slug}`}>Read More...</a>
-                </div>
-              </li>
-            </Link>
+            <Card directory="blog" post={blog} key={i} />
           ))}
         </ul>
       </div>
@@ -60,7 +60,6 @@ export async function getStaticProps() {
   const fs = require("fs");
   const files = fs.readdirSync(`${process.cwd()}/blogs`, "utf-8");
   const blogs = files.filter((fn) => fn.endsWith(".md"));
-  console.log(blogs);
 
   // const data = matter(content.default);
   const data = blogs.map((blog) => {

@@ -1,7 +1,7 @@
 ---
 title: "osc-webapp: simple web controller for receiving osc message from www"
 slug: osc-webapp
-date: 2021-02-16 23:20:16
+date: 2019-11-16 23:20:16
 category: Work
 tags: [Tool, Web]
 keyVisual: works/osc-webapp.png

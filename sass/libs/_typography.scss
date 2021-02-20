@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400");
 
 $montserrat: "Montserrat", sans-serif;
-$source: "Source Code Pro", monospace!important;
+$source: "Source Code Pro", monospace !important;
 
 html {
   * {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 400;
   }
   a,
@@ -20,6 +20,22 @@ html {
       font-family: $source;
     }
   }
+
+  article {
+    h1 {
+      font-weight: bold;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    a {
+      color: blueviolet;
+      text-decoration: underline;
+    }
+  }
+
   @include breakpoint(">=medium") {
     // 920px ~
     h1 {
@@ -51,6 +67,7 @@ html {
     // ~ 480px
     h1 {
       font-size: 24px;
+      font-weight: bold;
       line-height: 1.5;
       margin-top: 60px;
       margin-bottom: 30px;
