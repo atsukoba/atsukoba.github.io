@@ -4,7 +4,7 @@ header {
   width: 100vw;
   height: 75px;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 1);
   backdrop-filter: blur(2.5px);
 
   .container {
@@ -22,7 +22,7 @@ header {
     &::before {
       content: "";
       display: inline-block;
-      background-color: black;
+      background-color: rgb(65, 65, 65);
       width: 16px;
       height: 35px;
     }
@@ -99,6 +99,7 @@ header {
     }
     @include breakpoint(">small") {
       padding-top: 35px;
+      height: 75px;
       .logo {
         display: none;
       }

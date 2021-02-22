@@ -37,11 +37,6 @@
       background-size: cover;
       border-radius: 5px 5px 0 0;
       opacity: 1;
-      transition: opacity 0.5;
-
-      &:hover {
-        opacity: 0.75;
-      }
     }
     &__info_wrapper {
       height: calc(100% - #{$keyVisual-height});

@@ -6,6 +6,7 @@ import {
   faGithub,
   faSoundcloud,
   faFacebook,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -39,14 +40,14 @@ class Header extends Component {
               </a>
               <ul>
                 <li>
-                  <a href="/about">Me</a>
-                </li>
-                <li>
                   <a href="/blog">Blog</a>
                 </li>
                 <li>
-                  <a href="/cv">CV</a>
+                  <a href="/about">About Me</a>
                 </li>
+                {/* <li>
+                  <a href="/cv">CV</a>
+                </li> */}
                 {/* <li>
                   <a href="/works">Portfolio</a>
                 </li> */}
@@ -68,6 +69,16 @@ class Header extends Component {
                     className="icon"
                   >
                     <FontAwesomeIcon icon={faFacebook} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/atsuyakobayashi"
+                    target="_blank"
+                    rel="nofollow"
+                    className="icon"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
                   </a>
                 </li>
                 <li>
