@@ -66,7 +66,7 @@ const Blog = ({ content, data }) => {
 
 export async function getStaticProps(context) {
   const { blog } = context.params;
-  const content = await import(`../../blogs/${blog}`);
+  const content = await import(`../../blogs/${blog}.md`);
   const data = matter(content.default);
   console.dir(data);
   data.data.date = data.data.date.toJSON();
@@ -84,7 +84,7 @@ export async function getStaticPaths() {
   const works = files.filter((fn) => fn.endsWith(".md"));
   return {
     paths: works.map((w) => {
-      return { params: { blog: w } };
+      return { params: { blog: w.replace(".md", "") } };
     }),
     fallback: false,
   };

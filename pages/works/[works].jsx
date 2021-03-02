@@ -64,7 +64,7 @@ const Work = ({ content, data }) => {
 export async function getStaticProps(context) {
   // Import our .md file using the `slug` from the URL
   const { works } = context.params;
-  const content = await import(`../../portfolio/${works}`);
+  const content = await import(`../../portfolio/${works}.md`);
   const data = matter(content.default);
   console.dir(data);
   data.data.date = data.data.date.toJSON();
@@ -82,7 +82,7 @@ export async function getStaticPaths() {
   const works = files.filter((fn) => fn.endsWith(".md"));
   return {
     paths: works.map((w) => {
-      return { params: { works: w } };
+      return { params: { works: w.replace(".md", "") } };
     }),
     fallback: false,
   };
