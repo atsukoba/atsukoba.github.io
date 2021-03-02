@@ -5,14 +5,12 @@ const Breadcrumb = (props) => {
   return (
     <div className="breadcrumb">
       {props.pathes &&
-        props.pathes.map((path, idx) => {
-          return (
-            <>
-              <span>/</span>
-              <a href={path.url} key={idx}>{path.title}</a>
-            </>
-          );
-        })}
+        props.pathes.map((path, idx) => (
+          <span key={idx}>
+            <span>/</span>
+            <a href={path.url}>{path.title}</a>
+          </span>
+        ))}
     </div>
   );
 };

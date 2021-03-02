@@ -39,10 +39,8 @@ const Blog = ({ content, data }) => {
           <div className="article__tags">
             {data.tags &&
               data.tags.map((tag, l) => (
-                <a href={`/blog/?tag=${encodeURIComponent(tag)}`}>
-                  <span className="card__post__tag" key={l}>
-                    {tag}
-                  </span>
+                <a href={`/blog/?tag=${encodeURIComponent(tag)}`} key={l}>
+                  <span className="card__post__tag">{tag}</span>
                 </a>
               ))}
           </div>
@@ -66,13 +64,30 @@ const Blog = ({ content, data }) => {
   );
 };
 
-export default Blog;
-
-Blog.getInitialProps = async (context) => {
-  const { blog } = context.query;
-  // Import our .md file using the `slug` from the URL
-  const content = await import(`../../blogs/${blog}.md`);
+export async function getStaticProps(context) {
+  const { blog } = context.params;
+  const content = await import(`../../blogs/${blog}`);
   const data = matter(content.default);
+  console.dir(data);
+  data.data.date = data.data.date.toJSON();
+  return {
+    props: {
+      content: data.content,
+      data: data.data,
+    },
+  };
+}
 
-  return { ...data };
-};
+export async function getStaticPaths() {
+  const fs = require("fs");
+  const files = fs.readdirSync(`${process.cwd()}/blogs`, "utf-8");
+  const works = files.filter((fn) => fn.endsWith(".md"));
+  return {
+    paths: works.map((w) => {
+      return { params: { blog: w } };
+    }),
+    fallback: false,
+  };
+}
+
+export default Blog;

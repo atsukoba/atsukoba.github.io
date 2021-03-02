@@ -21,11 +21,6 @@ function MyApp({ Component, pageProps }) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="robots" content="noindex,nofollow" />
         <title>Atsuya Kobayashi</title>
-        <script
-          src="https://code.jquery.com/jquery-3.4.1.min.js"
-          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        ></script>
-        <link rel="shortcut icon" href="./img/favicon.ico" />
       </Head>
       <Header />
       <div style={{ width: "100vw", paddingTop: "75px" }}></div>

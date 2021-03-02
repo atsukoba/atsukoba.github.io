@@ -16,7 +16,6 @@ const Index = ({ data, title, description }) => {
   const allTags = Array.from(
     new Set(allContents.map((l) => l.tags).flat())
   ).sort();
-  console.log(allTags);
 
   const postItems = allContents
     .filter(
@@ -68,11 +67,11 @@ const Index = ({ data, title, description }) => {
           });
         }}
       >
-        <option value={""} key={0}>
+        <option value={""} key={"option__0"}>
           All
         </option>
         {allTags.map((tag, i) => (
-          <option value={tag} key={i + 1} selected={tag == router.query.tag}>
+          <option value={tag} key={`option__${i + 1}`}>
             {tag}
           </option>
         ))}
@@ -80,7 +79,7 @@ const Index = ({ data, title, description }) => {
       <div>
         <ul className="card_container">
           {postItems.map((blog, i) => (
-            <Card directory="blog" post={blog} key={i} />
+            <Card directory="blog" post={blog} idx={i} key={i} />
           ))}
         </ul>
       </div>
@@ -98,11 +97,14 @@ export async function getStaticProps() {
 
   // const data = matter(content.default);
   const data = blogs.map((blog) => {
-    const path = `${process.cwd()}/blogs/${blog}`;
-    const rawContent = fs.readFileSync(path, {
-      encoding: "utf-8",
-    });
-    return rawContent;
+    console.log(blog);
+    if (blog) {
+      const path = `${process.cwd()}/blogs/${blog}`;
+      const rawContent = fs.readFileSync(path, {
+        encoding: "utf-8",
+      });
+      return rawContent;
+    }
   });
 
   return {

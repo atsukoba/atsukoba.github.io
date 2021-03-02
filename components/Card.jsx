@@ -3,9 +3,9 @@ import { darcula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import Link from "next/link";
 import { format } from "../helpers/dateFormat";
 
-const Card = ({ directory, post }) => {
+const Card = ({ directory, post, idx }) => {
   return (
-    <li className="card card__post">
+    <li className="card card__post" key={`card__post__${idx}`}>
       <Link href={`/${directory}/${post.slug}`}>
         <div
           className="card__post__keyVisual"

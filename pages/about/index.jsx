@@ -22,8 +22,7 @@ function About({ content, data }) {
 
 export default About;
 
-About.getInitialProps = async (context) => {
-  const { blog } = context.query;
+About.getInitialProps = async () => {
   // Import our .md file using the `slug` from the URL
   const content = await import(`../../blogs/pages/about.md`);
   const data = matter(content.default);

@@ -16,7 +16,6 @@ const FooterSocialLinks = ({ link, title }) => {
       </a>
       <a
         id="twitterShareButton"
-        class="twitter-share-button"
         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
           title + "\n" + link
         )}`}

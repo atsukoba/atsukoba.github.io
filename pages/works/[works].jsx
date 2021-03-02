@@ -61,13 +61,31 @@ const Work = ({ content, data }) => {
   );
 };
 
-export default Work;
-
-Work.getInitialProps = async (context) => {
-  const { works } = context.query;
+export async function getStaticProps(context) {
   // Import our .md file using the `slug` from the URL
-  const content = await import(`../../portfolio/${works}.md`);
+  const { works } = context.params;
+  const content = await import(`../../portfolio/${works}`);
   const data = matter(content.default);
+  console.dir(data);
+  data.data.date = data.data.date.toJSON();
+  return {
+    props: {
+      content: data.content,
+      data: data.data,
+    },
+  };
+}
 
-  return { ...data };
-};
+export async function getStaticPaths() {
+  const fs = require("fs");
+  const files = fs.readdirSync(`${process.cwd()}/portfolio`, "utf-8");
+  const works = files.filter((fn) => fn.endsWith(".md"));
+  return {
+    paths: works.map((w) => {
+      return { params: { works: w } };
+    }),
+    fallback: false,
+  };
+}
+
+export default Work;

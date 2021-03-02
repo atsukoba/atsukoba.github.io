@@ -1,6 +1,6 @@
 ---
 description: ""
-title: nodejsでローカルにoscを送るwebアプリケーションを作る (SocketIO, Express)
+title: "nodejsでローカルにoscを送るwebアプリケーションを作る (SocketIO, Express)"
 slug: osc-webapp
 date: 2019-10-08 17:50:42
 category: "Tech Blog"
