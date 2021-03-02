@@ -7,7 +7,7 @@ const FooterSocialLinks = ({ link, title }) => {
       <a
         id="lineShareButton"
         href={`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(
-          link
+          title + " - atsuya.xyz\n\n" + link
         )}`}
         target="_blank"
         data-size="large"
@@ -17,7 +17,7 @@ const FooterSocialLinks = ({ link, title }) => {
       <a
         id="twitterShareButton"
         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-          title + "\n" + link
+          title + " - atsuya.xyz\n\n" + link
         )}`}
         rel="nofollow"
         data-size="large"
