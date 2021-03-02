@@ -18,7 +18,7 @@ const Index = ({ data, title, description }) => {
       <div>
         <ul className="card_container">
           {ListItems.map((blog, i) => (
-            <Card directory="works" post={blog} key={i} />
+            <Card directory="works" post={blog} idx={i} key={i} />
           ))}
         </ul>
       </div>
@@ -26,15 +26,11 @@ const Index = ({ data, title, description }) => {
   );
 };
 
-export default Index;
-
 export async function getStaticProps() {
   const siteData = await import(`../config.json`);
   const fs = require("fs");
   const files = fs.readdirSync(`${process.cwd()}/portfolio`, "utf-8");
   const works = files.filter((fn) => fn.endsWith(".md"));
-  console.log(works);
-
   // const data = matter(content.default);
   const data = works.map((work) => {
     const path = `${process.cwd()}/portfolio/${work}`;
@@ -52,3 +48,5 @@ export async function getStaticProps() {
     },
   };
 }
+
+export default Index;

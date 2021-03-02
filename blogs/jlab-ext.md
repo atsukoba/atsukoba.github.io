@@ -1,6 +1,6 @@
 ---
 description: ""
-title: Jupyter Lab の Extensionメモ
+title: JupyterLabのExtensionメモ
 slug: jlab-ext
 date: 2019-04-19 05:07:47
 category: "Tech Blog"

@@ -1,6 +1,6 @@
 ---
 description: ""
-title: Keio SFC Open Research Forum 2019で作品発表
+title: "Keio SFC Open Research Forum 2019で作品発表"
 slug: x-sampling-orf
 date: 2019-11-28 00:30:02
 category: "Tech Blog"

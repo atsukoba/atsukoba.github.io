@@ -1,13 +1,13 @@
 ---
-description: ""
-title: pykakasi, mecab-python3等のメモ。
+description: ''
+title: 'pykakasi, mecab-python3等のメモ。'
 slug: pykakasi-mecab-python
 date: 2019-07-15 04:54:40
-category: "Tech Blog"
+category: 'Tech Blog'
 tags: [Python, Qiita]
 ---
 
-[「**ゴー☆ジャス（宇宙海賊）をつくる**」](https://qiita.com/jg43yr/items/30defcdb69163612fc27)という，~~お笑い芸人~~[宇宙海賊ゴー☆ジャス](https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%BC%E2%98%86%E3%82%B8%E3%83%A3%E3%82%B9)のネタ生成プログラム(Python)に関する記事を執筆し，初Qiita投稿でデイリートレンド１位いただきました。本稿では主に利用したパッケージ詳細のメモです。<a href="https://twitter.com/gorgeous55555?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @gorgeous55555</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+[「**ゴー ☆ ジャス（宇宙海賊）をつくる**」](https://qiita.com/jg43yr/items/30defcdb69163612fc27)という，~~お笑い芸人~~[宇宙海賊ゴー ☆ ジャス](https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%BC%E2%98%86%E3%82%B8%E3%83%A3%E3%82%B9)のネタ生成プログラム(Python)に関する記事を執筆し，初 Qiita 投稿でデイリートレンド１位いただきました。本稿では主に利用したパッケージ詳細のメモです。<a href="https://twitter.com/gorgeous55555?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @gorgeous55555</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <!-- more -->
 
@@ -31,18 +31,18 @@ python-Levenshtein==0.12.0
 
 - usage
 
-`H`がhiragana, `K`がkatakana, `A`がalphabet
+`H`が hiragana, `K`が katakana, `A`が alphabet
 
 ```python
-import pykakasi.kakasi as kakasi 
+import pykakasi.kakasi as kakasi
 
-kakasi = kakasi() 
-kakasi.setMode("H","a") # default: Hiragana -> Roman 
-kakasi.setMode("K","a") # default: Katakana -> Roman 
-kakasi.setMode("J","a") # default: Japanese -> Roman 
-kakasi.setMode("r","Hepburn") # default: use Hepburn Roman table 
-kakasi.setMode("s", True) # default: Separator 
-kakasi.setMode("C", True) # default: Capitalize 
+kakasi = kakasi()
+kakasi.setMode("H","a") # default: Hiragana -> Roman
+kakasi.setMode("K","a") # default: Katakana -> Roman
+kakasi.setMode("J","a") # default: Japanese -> Roman
+kakasi.setMode("r","Hepburn") # default: use Hepburn Roman table
+kakasi.setMode("s", True) # default: Separator
+kakasi.setMode("C", True) # default: Capitalize
 conv = kakasi.getConverter()  # instantiate Converter
 result = conv.do(text)  # romanize
 ```
@@ -51,9 +51,9 @@ result = conv.do(text)  # romanize
 
 ## mecab-python
 
-[MeCab](https://taku910.github.io/mecab/)のPythonラッパ。
+[MeCab](https://taku910.github.io/mecab/)の Python ラッパ。
 
-#### MeCab on docker
+### MeCab on docker
 
 - Dockerfile
 
@@ -113,7 +113,7 @@ parsed = [[l.split('\t')[0], tuple(l.split('\t')[1].split(','))] for l in T.pars
 
 `re`で一気に分ける
 
-```python 
+```python
 import re
 parsed = [tuple(re.split(r"[\t,]", l)) for l in T.parse(text).splitlines()[:-1]]
 ```
@@ -153,4 +153,3 @@ EOS
 
 - `-Oyomi`オプションで読みの出力。ただ分かち書きがされない。
 
----
