@@ -1,18 +1,11 @@
 ---
-description: ''
 title: 'pykakasi, mecab-python3等のメモ。'
+description: 'pykakasi, mecab-python3等のメモ。'
 slug: pykakasi-mecab-python
 date: 2019-07-15 04:54:40
 category: 'Tech Blog'
 tags: [Python, Qiita]
----
-
-[「**ゴー ☆ ジャス（宇宙海賊）をつくる**」](https://qiita.com/jg43yr/items/30defcdb69163612fc27)という，~~お笑い芸人~~[宇宙海賊ゴー ☆ ジャス](https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%BC%E2%98%86%E3%82%B8%E3%83%A3%E3%82%B9)のネタ生成プログラム(Python)に関する記事を執筆し，初 Qiita 投稿でデイリートレンド１位いただきました。本稿では主に利用したパッケージ詳細のメモです。<a href="https://twitter.com/gorgeous55555?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @gorgeous55555</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<!-- more -->
-
-![screenshot](https://i.gyazo.com/6c239b85b1b195b7ee2f693751d1c763.png)
-
+keyVisual: https://i.gyazo.com/1b67640d65d11ebc36655c0296b6286e.png
 ---
 
 ## packages
@@ -152,4 +145,3 @@ EOS
 #### その他
 
 - `-Oyomi`オプションで読みの出力。ただ分かち書きがされない。
-

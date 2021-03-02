@@ -1,19 +1,18 @@
 ---
-description: ""
-title: "Processingのvscode開発環境を構築(Mac)"
+title: 'Processingのvscode開発環境を構築(Mac)'
+description: 'Processingのvscode開発環境をMac向けに構築しました'
 slug: processing-on-vscode
 date: 2019-08-25 07:16:23
-category: "Tech Blog"
+category: 'Tech Blog'
 tags: [Processing, Visual Studio Code]
+keyVisual: https://i.gyazo.com/2458c026d0085fae794cd1f5ff8b5bfd.jpg
 ---
 
-ProcessingのIDEが非常にイヤなので，まずは[Qiita: ProcessingをVisual Studio Codeで動かしたい](https://qiita.com/jacynthe/items/d31eaa77496295c10556)を参照し設定する。しかしこの記事のやり方だと，1スケッチ毎に`.vscode`による設定をしなければならずイヤなので，例えば[Processingでゼロから学ぶプログラミング・ビジュアルアートの公式リポジトリ](https://github.com/cocopon/zero-pde)なんかをcloneしてきて試す時に，プロジェクトフォルダに内包されている複数のスケッチを即時実行できるように改良したメモです。
-
-<!-- more -->
+Processing の IDE が非常にイヤなので，まずは[Qiita: Processing を Visual Studio Code で動かしたい](https://qiita.com/jacynthe/items/d31eaa77496295c10556)を参照し設定する。しかしこの記事のやり方だと，1 スケッチ毎に`.vscode`による設定をしなければならずイヤなので，例えば[Processing でゼロから学ぶプログラミング・ビジュアルアートの公式リポジトリ](https://github.com/cocopon/zero-pde)なんかを clone してきて試す時に，プロジェクトフォルダに内包されている複数のスケッチを即時実行できるように改良したメモです。
 
 ## 準備
 
-まずは上述の[Qiita記事](https://qiita.com/jacynthe/items/d31eaa77496295c10556)通りにセッティングを行う。そしたらProcessingのインストール。ラクなので`Homebrew`を使う。
+まずは上述の[Qiita 記事](https://qiita.com/jacynthe/items/d31eaa77496295c10556)通りにセッティングを行う。そしたら Processing のインストール。ラクなので`Homebrew`を使う。
 
 ### install.sh
 
@@ -77,4 +76,4 @@ ${execPath} - the path to the running VS Code executable
 
 これにより，プロジェクトフォルダ直下の`.pde`でなくても，`Command + Shift + B`で実行できる。ウレシイ。
 
-ここで，試しに`git submodule add git@github.com:cocopon/zero-pde.git`をして，Processingでゼロから学ぶプログラミング・ビジュアルアートを試す等すると良いかも。
+ここで，試しに`git submodule add git@github.com:cocopon/zero-pde.git`をして，Processing でゼロから学ぶプログラミング・ビジュアルアートを試す等すると良いかも。

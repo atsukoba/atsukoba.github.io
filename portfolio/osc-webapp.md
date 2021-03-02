@@ -5,5 +5,5 @@ slug: osc-webapp
 date: 2019-11-16 23:20:16
 category: Work
 tags: [Tool, Web]
-keyVisual: works/osc-webapp.png
+keyVisual: /images/works/osc-webapp.png
 ---

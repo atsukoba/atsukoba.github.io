@@ -1,15 +1,16 @@
 ---
-description: ""
 title: JupyterLabのExtensionメモ
+description: 'Jupyter Labの拡張機能メモ'
 slug: jlab-ext
 date: 2019-04-19 05:07:47
-category: "Tech Blog"
-tags: [Python, Jupyter Lab]
+category: 'Tech Blog'
+tags: [Jupyter]
+keyVisual: https://i.gyazo.com/6d52df1f28b5f067804814ac8216f645.png
 ---
 
-Jupyter Labの拡張機能メモ
+Jupyter Lab の拡張機能メモ
 
-<!-- more -->
+[Extensions — JupyterLab 3.0.6 documentation](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html)
 
 ## Git
 

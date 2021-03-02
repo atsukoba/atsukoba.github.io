@@ -1,16 +1,15 @@
 ---
-description: ""
 title: Doc2VecとOptunaを使ったSVMでのテキスト分類を作ってみた
+description: "Optunaを使ってみる練習として，Doc2Vecを用いてテキスト分類をするやつをサクっと書きました。出力はモデルのaccuracy，F1と，`pyplot`でのConfusion Matrixを出力します。"
 slug: doc2vec-svm-sentenceclassification
 date: 2019-02-15 23:20:16
 category: "Tech Blog"
-tags: [ML, NLP]
+tags: [機械学習, 自然言語処理]
+keyVisual: https://i.gyazo.com/2beff33d13697eb79d89a39204d44373.png
 ---
 
 Optunaを使ってみる練習として，Doc2Vecを用いてテキスト分類をするやつをサクっと書きました。  
 出力はモデルのaccuracy，F1と，`pyplot`でのConfusion Matrixを出力します。
-
-<!-- more -->
 
 ラベルデータを下記の形で用意します
 

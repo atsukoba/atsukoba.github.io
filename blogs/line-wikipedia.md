@@ -1,10 +1,11 @@
 ---
-description: ""
-title: "Wikipediaから検索するLINE botを作った"
+title: 'Wikipediaから検索するLINE botを作った'
+description: '`flask`, `line-bot-sdk` と `wikipedia`で作って，`heroku`にデプロイします。'
 slug: line-wikipedia
 date: 2019-05-04 00:26:20
-category: "Tech Blog"
-tags: [Python, LINE Bot]
+category: 'Tech Blog'
+tags: [Python, チャットボット]
+keyVisual: https://repository-images.githubusercontent.com/184452650/ee9d3b80-6cab-11e9-9261-01e61f18fa3c
 ---
 
 `flask`, `line-bot-sdk` と `wikipedia`で作って，`heroku`にデプロイします。
@@ -12,9 +13,6 @@ tags: [Python, LINE Bot]
 <a href="http://nav.cx/9xRAMW8" >ぜひ使って下さい。</a><a href="http://nav.cx/9xRAMW8" style="width: 120px;height: 35px;display: inline-block;border-radius: 10px;background-image: url(https://scdn.line-apps.com/n/line_add_friends/btn/ja.png);background-size: cover;">
 </a>
 
-<!-- more -->
-
----
 
 ## 完成図
 

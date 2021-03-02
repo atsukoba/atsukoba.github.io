@@ -1,15 +1,14 @@
 ---
-description: ""
-title: "bashプロンプトメモ"
+title: 'bashプロンプトメモ'
+description: 'Git のブランチをプロンプトに表示したかったので'
 slug: ps1
 date: 2019-04-29 00:00:53
-category: "Tech Blog"
+category: 'Tech Blog'
 tags: [shellscript, bash]
+keyVisual: https://i.gyazo.com/1aa55461979ca2a5e392e0bf6be39425.png
 ---
 
-Git のブランチをプロンプトに表示したかったので，[プロンプトをカスタマイズして git ブランチを表示する](https://qiita.com/caad1229/items/6d71d84933c8a87af0c4)をもとに，`~/.bashrc`の`PS1`(The primary prompt string) を変更したのでメモ。
-
----
+Git のブランチをプロンプトに表示したかったので，[プロンプトをカスタマイズして git ブランチを表示する](https://qiita.com/caad1229/items/6d71d84933c8a87af0c4)をもとに，`~/.bashrc`の`PS1`(The primary prompt string) を変更したので備忘録です
 
 <script src="https://gist.github.com/atsukoba/369f8afa9bde30ceafce2d4f3b087a2c.js"></script>
 

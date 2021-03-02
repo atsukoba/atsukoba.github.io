@@ -1,15 +1,14 @@
 ---
-description: ""
 title: 任天堂SwitchのジョイコンをPython経由で楽器にする
+description: "Bluetooth接続したJoy-Conからhid経由で情報取得するPythonライブラリ`joycon-python`の開発に参加し，その`joycon-python`を用いて信号をOSC (Open Sound Control)に飛ばすスクリプト`joycon-osc`を作成し，その`joycon-osc`を用いて送信した情報をMaxで受け取って音にしました。"
 slug: joycon-driver
 date: 2020-01-26 03:40:48
 category: "Tech Blog"
-tags: [Python, Max/MSP, Joycon]
+tags: [Python, Max/MSP, Bluetooth, Open Sound Control]
+keyVisual: https://i.gyazo.com/4835972f8fde2c7671125a408d52ffa5.jpg
 ---
 
 Bluetooth接続したJoy-Conからhid経由で情報取得するPythonライブラリ`joycon-python`の開発に参加し，その`joycon-python`を用いて信号をOSC (Open Sound Control)に飛ばすスクリプト`joycon-osc`を作成し，その`joycon-osc`を用いて送信した情報をMaxで受け取って音にしました。
-
-<!-- more -->
 
 こんなものです。
 

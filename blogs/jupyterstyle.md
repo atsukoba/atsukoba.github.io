@@ -4,7 +4,8 @@ title: "Jupyter NotebookのCustom CSS"
 slug: jupyterstyle
 date: 2019-04-24 10:33:59
 category: "Tech Blog"
-tags: [Jupyter Notebook, CSS]
+tags: [CSS, Jupyter]
+keyVisual: https://i.gyazo.com/5567d5a7d74c2989ba069c3563b6061a.png
 ---
 
 Jupyter Notebookでは`~/.jupyter/custom/custom.css`にCSSを記述すれば自由にスタイルを変えられる。テーマを変更するのではなく，自前でCSSを書く。  

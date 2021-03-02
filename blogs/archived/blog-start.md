@@ -4,7 +4,7 @@ title: Hexoでブログ的な物を開設しました。
 slug: blog-start
 date: 2019-02-13 14:52:43
 category: "Tech Blog"
-tags: [Hexo, ご報告]
+tags: [ご報告]
 ---
 
 atsuyaです。この度ブログ的な物をつくりました。

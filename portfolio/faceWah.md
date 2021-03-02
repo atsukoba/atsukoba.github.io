@@ -5,7 +5,7 @@ slug: faceWah
 date: 2020-6-20 23:20:16
 category: Research
 tags: [Music, HCI]
-keyVisual: works/facewah.png
+keyVisual: /images/works/facewah.png
 ---
 
 <https://github.com/atsukoba/faceWah>

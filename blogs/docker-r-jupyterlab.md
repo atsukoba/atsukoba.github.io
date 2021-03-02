@@ -1,15 +1,14 @@
 ---
-description: ""
 title: DockerでRstanが使えるJupyterLabのサーバーを建てる
+description: "Rstanの環境構築でコケるので。"
 slug: docker-r-jupyterlab
 date: 2019-07-22 11:23:52
 category: "Tech Blog"
-tags: [Docker, R, Jupyter Lab]
+tags: [Docker, R, Jupyter]
+keyVisual: https://i.gyazo.com/3db0c0080225207a25f263779916a5a4.png
 ---
 
 Rstanの環境構築でコケるので。
-
-<!-- more -->
 
 ## Dockerfile
 

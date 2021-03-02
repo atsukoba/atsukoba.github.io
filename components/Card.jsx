@@ -10,9 +10,7 @@ const Card = ({ directory, post, idx }) => {
         <div
           className="card__post__keyVisual"
           style={{
-            backgroundImage: `url(/images/${
-              post.keyVisual || "undefined.jpg"
-            })`,
+            backgroundImage: `url(${post.keyVisual || "/images/undefined.jpg"})`,
           }}
         ></div>
       </Link>

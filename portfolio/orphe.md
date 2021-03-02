@@ -5,7 +5,7 @@ slug: orphe
 date: 2020-4-20 23:20:16
 category: Work
 tags: [Music, HCI, NIME]
-keyVisual: works/orphe.png
+keyVisual: /images/works/orphe.png
 ---
 
 ### Electric Guitar Wah

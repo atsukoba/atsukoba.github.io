@@ -5,7 +5,7 @@ slug: exsampling
 date: 2020-5-13 23:20:16
 category: Research
 tags: [NIME, Music Tech]
-keyVisual: works/exsampling.png
+keyVisual: /images/works/exsampling.png
 ---
 
 Paper: <https://arxiv.org/abs/2006.09645>
