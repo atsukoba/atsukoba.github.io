@@ -1,8 +1,9 @@
 ---
+description: ""
 title: herokuでPython製LINEbot+WebAppをCIする
 slug: flask-line-bot-heroku
 date: 2019-07-26 03:14:45
-category: Tech
+category: "Tech Blog"
 tags: [Python, flask, LINE Bot]
 ---
 

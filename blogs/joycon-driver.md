@@ -1,8 +1,9 @@
 ---
+description: ""
 title: 任天堂SwitchのジョイコンをPython経由で楽器にする
 slug: joycon-driver
 date: 2020-01-26 03:40:48
-category: Tech
+category: "Tech Blog"
 tags: [Python, Max/MSP, Joycon]
 ---
 

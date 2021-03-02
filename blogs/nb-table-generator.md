@@ -1,8 +1,9 @@
 ---
+description: ""
 title: 複数の.ipynb をまとめて目次生成
 slug: nb-table-generator
 date: 2019-02-16 23:01:27
-category: Tech
+category: "Tech Blog"
 tags: [Python, Jupyter Notebook]
 ---
 

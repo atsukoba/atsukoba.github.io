@@ -1,4 +1,5 @@
 ---
+description: ""
 title: 「sunday evening downer」を公開
 slug: sunday-evening
 date: 2019-07-14 23:46:04

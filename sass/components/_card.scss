@@ -48,15 +48,15 @@
     &__tag,
     &__date,
     &__category {
-      font-size: 12px;
+      font-size: 10px;
       line-height: 12px;
       border-radius: 2.5px;
     }
     &__tag {
       color: whitesmoke;
-      background-color: #828282;
+      background-color: #979797;
       margin-right: 5px;
-      padding: 5px;
+      padding: 2.5px 5px;
       font-family: $montserrat;
     }
     &__date {

@@ -1,8 +1,9 @@
 ---
+description: ""
 title: pykakasi, mecab-python3等のメモ。
 slug: pykakasi-mecab-python
 date: 2019-07-15 04:54:40
-category: Tech
+category: "Tech Blog"
 tags: [Python, Qiita]
 ---
 

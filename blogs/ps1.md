@@ -1,8 +1,9 @@
 ---
+description: ""
 title: bashプロンプトメモ
 slug: ps1
 date: 2019-04-29 00:00:53
-category: Tech
+category: "Tech Blog"
 tags: [shellscript, bash]
 ---
 

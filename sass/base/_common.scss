@@ -22,6 +22,7 @@ img {
 
 .container {
   width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   max-width: $contents-max-width;
 
@@ -75,4 +76,37 @@ img {
   @include breakpoint("<=small") {
     margin-left: -15px;
   }
+}
+
+#select-post-tag {
+  color: $font-black;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0.5px solid $grey3;
+  background-color: $bg-white;
+}
+
+#twitterShareButton,
+#lineShareButton {
+  @include breakpoint("<=small") {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    border-radius: 25px;
+  }
+  @include breakpoint(">small") {
+    display: none;
+  }
+}
+
+#lineShareButton {
+  left: 15px;
+}
+
+#twitterShareButton {
+  color: white;
+  background-color: lightblue;
+  left: 65px;
 }

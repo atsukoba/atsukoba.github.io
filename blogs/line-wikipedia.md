@@ -1,8 +1,9 @@
 ---
+description: ""
 title: Wikipediaから検索するLINE botを作った
 slug: line-wikipedia
 date: 2019-05-04 00:26:20
-category: Tech
+category: "Tech Blog"
 tags: [Python, LINE Bot]
 ---
 

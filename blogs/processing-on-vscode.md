@@ -1,8 +1,9 @@
 ---
+description: ""
 title: Processingのvscode開発環境を構築(Mac)
 slug: processing-on-vscode
 date: 2019-08-25 07:16:23
-category: Tech
+category: "Tech Blog"
 tags: [Processing, Visual Studio Code]
 ---
 

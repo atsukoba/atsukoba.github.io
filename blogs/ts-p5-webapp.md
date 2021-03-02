@@ -1,8 +1,9 @@
 ---
+description: ""
 title: ブラウザ上で録音できるツールをflask + recorder.js + p5.js on TypeScript で作る
 slug: ts-p5-webapp
 date: 2019-11-4 01:27:35
-category: Tech
+category: "Tech Blog"
 tags: [p5.js, Recorder.js, Web Audio API, TypeScript]
 ---
 

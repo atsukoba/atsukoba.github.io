@@ -1,8 +1,9 @@
 ---
+description: ""
 title: Doc2VecとOptunaを使ったSVMでのテキスト分類を作ってみた
 slug: doc2vec-svm-sentenceclassification
 date: 2019-02-15 23:20:16
-category: Tech
+category: "Tech Blog"
 tags: [ML, NLP]
 ---
 

@@ -3,12 +3,26 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Card from "../../components/Card";
 import Container from "../../components/Container";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const Index = ({ data, title, description }) => {
-  const ListItems = data
+  const router = useRouter();
+
+  const allContents = data
     .map((blog) => matter(blog))
-    .map((listItem) => listItem.data)
+    .map((listItem) => listItem.data);
+
+  const allTags = Array.from(
+    new Set(allContents.map((l) => l.tags).flat())
+  ).sort();
+  console.log(allTags);
+
+  const postItems = allContents
+    .filter(
+      (listItem) =>
+        !router.query.tag || listItem.tags.includes(router.query.tag)
+    )
     .sort(function (a, b) {
       return -(a.date - b.date);
     });
@@ -41,10 +55,31 @@ const Index = ({ data, title, description }) => {
 
   return (
     <Container>
-      <h1>Blog ✍ </h1>
+      <h1>Blog ✍</h1>
+      <span>Tag:&nbsp;</span>
+      <select
+        name="select-post-tag"
+        id="select-post-tag"
+        value={router.query.tag}
+        onChange={(e) => {
+          router.push({
+            pathname: "/blog",
+            query: { tag: e.target.value },
+          });
+        }}
+      >
+        <option value={""} key={0}>
+          All
+        </option>
+        {allTags.map((tag, i) => (
+          <option value={tag} key={i + 1} selected={tag == router.query.tag}>
+            {tag}
+          </option>
+        ))}
+      </select>
       <div>
         <ul className="card_container">
-          {ListItems.map((blog, i) => (
+          {postItems.map((blog, i) => (
             <Card directory="blog" post={blog} key={i} />
           ))}
         </ul>

@@ -2,7 +2,7 @@
 slug: doc2vec-sansan-blog
 title: 「Doc2Vecによる文書ベクトル推論の安定化について」を書きました。
 date: 2019-04-11 01:08:35
-category: Tech
+category: "Tech Blog"
 tags: [Python, NLP]
 ---
 

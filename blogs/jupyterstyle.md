@@ -1,8 +1,9 @@
 ---
+description: ""
 title: Jupyter NotebookのCustom CSS
 slug: jupyterstyle
 date: 2019-04-24 10:33:59
-category: Tech
+category: "Tech Blog"
 tags: [Jupyter Notebook, CSS]
 ---
 
