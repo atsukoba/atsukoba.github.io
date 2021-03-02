@@ -6,6 +6,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## contents type
 
-### blog post
+- blog post
+- portfolio
 
-### portfolio
+## Build and Run
+
+after installing packages by `npm i`, run `npm run build && npm run export`
+
+check your SSG-generated site by `npx serve out/`
