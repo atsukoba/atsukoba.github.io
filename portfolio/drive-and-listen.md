@@ -2,7 +2,7 @@
 description: ""
 title: "Sonification of Drive-and-Listen"
 slug: drive-and-listen
-date: 2020-4-20 23:20:16
+date: 2020-7-15 23:20:16
 category: Prototype
 tags: [Sonification]
 keyVisual: https://i.gyazo.com/3b325bfa825898b7d7d31b95c97c52cf.jpg
