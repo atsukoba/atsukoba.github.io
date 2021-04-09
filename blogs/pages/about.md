@@ -47,6 +47,10 @@ Fundamental Information Technology Engineer Examination (2017/11)
 
 ## Honors & Awards
 
+**優秀卒業プロジェクト, 慶應義塾大学湘南藤沢キャンパス 2020年度**
+
+https://www.sfc.keio.ac.jp/doc/sotsupuro2011-2020.pdf
+
 **3rd Prize, Excellent Student Paper Award, IEEE 1st Global Conference on Life Sciences and Technologies (LifeTech 2019)**
 
 Co-author (2nd author) of accepted paper "Decoding Relative Pitch Imagery Using Functional Connectivity; An Electroencephalographic Study" by Sakamoto Shu. (3/2019)
