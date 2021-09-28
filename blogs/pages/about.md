@@ -1,22 +1,16 @@
 ---
-description: ""
+description: 'about Atsuya Kobayashi / 小林篤矢'
 title: Profile
 date: 1998-02-03 12:00:00
 ---
 
-- **Keywords**: Music and HCI (Interactive System on Musical Experience), Human-Artificial Intelligence Interaction, Natural Language Processing
+- **Keywords**: Music and HCI (Interactive System on Musical Experience), Human-Artificial Intelligence Interaction
 - **Email**: atsuya_wgp4346 [at] keio.jp
 - **Hobbies**: Electric Guitar, Drums, Electric Bass, Koto (Japanese Traditional Harp)
 
 ### Publications
 
 [Google Scholar](https://scholar.google.com/citations?user=wk9-xH8AAAAJ&hl=ja)
-
-- **ExSampling: a system for the real-time ensemble performance of field-recorded environmental sounds**, Conference paper on The International Conference on New Interfaces for Musical Expression 2020 (NIME2020) (7/2020) <https://www.nime.org/>
-
-- **Decoding relative pitch imagery using functional connectivity: An electroencephalographic study**, 2nd author of the conference paper on IEEE 1st Global Conference on Life Sciences and Technologies (LifeTech) (3/2019) <http://www.ieee-lifetech.org/2020/index.html>
-
-- **Classification of EEG data during imaging higher or lower pitched sounds using machine learning**, Japanese Society for Medical and Biological Engineering (9/2018) <http://jsmbe.org/en/>
 
 ### Grants
 
@@ -28,7 +22,7 @@ Fundamental Information Technology Engineer Examination (2017/11)
 
 ## Honors & Awards
 
-**優秀卒業プロジェクト, 慶應義塾大学湘南藤沢キャンパス 2020年度**
+**優秀卒業プロジェクト, 慶應義塾大学湘南藤沢キャンパス 2020 年度**
 
 https://www.sfc.keio.ac.jp/doc/sotsupuro2011-2020.pdf
 
@@ -50,7 +44,7 @@ honor descriptionPresentation Title "Improve Plan of Japanese Restaurant Review 
 
 ---
 
-## Languages / Skils
+## Skils
 
 ### Natural
 
@@ -62,7 +56,7 @@ honor descriptionPresentation Title "Improve Plan of Japanese Restaurant Review 
 - **Python**  
   Natural Language Processing, Data visualization, Machine Learning, Japanese Natural Language Processing, DNN with some libraries (`scipy`, `sklearn`, `Keras`, `Pytorch`, `Optuna`, `gensim`...etc), simple web api, Make LINE chatbot
 - **JavaScript(node.js)/TypeScript**  
-  SPA with `React`, prototyping with `Vue.js`, Simple web app tools on `Google Apps Script`.
+  SPA development with `React`, prototyping with `Vue.js`, Simple web app tools on `Google Apps Script`.
 - **Swift**
 - **PHP**  
   Build CMS on `WordPress` (make custom theme from scratch)
@@ -72,5 +66,5 @@ honor descriptionPresentation Title "Improve Plan of Japanese Restaurant Review 
   OSC, Max for Live Devices
 - **R**  
   Data analysis and visualization (ex. multi var linear regression, generalized linear models (`glmnet`) etc..)
-- **C++*  
+- **C\+\+**  
   Audio app prototyping with `JUCE`
