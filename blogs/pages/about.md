@@ -8,15 +8,6 @@ date: 1998-02-03 12:00:00
 - **Email**: atsuya_wgp4346 [at] keio.jp
 - **Hobbies**: Electric Guitar, Drums, Electric Bass, Koto (Japanese Traditional Harp)
 
-## Education
-
-Faculty of Environment and Information Studies, Keio University (04/2016 - present)
-
-### Research
-
-- Aoyama Lab. (04/2017 - 03/2019)
-- Computational Creativity Lab. (04/2019 - present)
-
 ### Publications
 
 [Google Scholar](https://scholar.google.com/citations?user=wk9-xH8AAAAJ&hl=ja)
@@ -30,16 +21,6 @@ Faculty of Environment and Information Studies, Keio University (04/2016 - prese
 ### Grants
 
 Keio SFC Eccentric Research Grant 2020
-
-## Job Experiences
-
-| Company                          | Role                              | Period            |
-| :------------------------------- | :-------------------------------- | :---------------- |
-| Synflux                          | Assistant Research SWE            | 04/2020 - present |
-| TechFlyer, Inc.                  | Parttime Software Engineer        | 04/2019 - present |
-| CyberAgent AI Lab                | SWE (Machine Learning) Internship | 02/2020 - 03/2020 |
-| Sansan DSOC                      | SWE (NLP Research) Internship     | 02/2019 - 03/2019 |
-| FRONTEO Bisiness Informatics Lab | NLP Research Internship           | 09/2018 - 02/2019 |
 
 ## Licenses & Certifications
 
@@ -80,13 +61,16 @@ honor descriptionPresentation Title "Improve Plan of Japanese Restaurant Review 
 
 - **Python**  
   Natural Language Processing, Data visualization, Machine Learning, Japanese Natural Language Processing, DNN with some libraries (`scipy`, `sklearn`, `Keras`, `Pytorch`, `Optuna`, `gensim`...etc), simple web api, Make LINE chatbot
-- **JavaScript**  
-  SPA with `React`, prototyping with `Vue.js`, Frontend Animation with `JQuery`, Simple web app tools on `Google Apps Script`.
-- **R**  
-  Data analysis and visualization (ex. multi var linear regression, generalized linear models (`glmnet`) etc..)
+- **JavaScript(node.js)/TypeScript**  
+  SPA with `React`, prototyping with `Vue.js`, Simple web app tools on `Google Apps Script`.
+- **Swift**
 - **PHP**  
   Build CMS on `WordPress` (make custom theme from scratch)
 - **HTML5/CSS3**  
   Markup, oocss like architecture responsive coding and simple animations.
 - **Max/MSP**  
   OSC, Max for Live Devices
+- **R**  
+  Data analysis and visualization (ex. multi var linear regression, generalized linear models (`glmnet`) etc..)
+- **C++*  
+  Audio app prototyping with `JUCE`
