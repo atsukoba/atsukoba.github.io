@@ -12,6 +12,55 @@ Mediapipe: <https://github.com/google/mediapipe>
 
 MediaPipe Hand: <https://google.github.io/mediapipe/solutions/hands>
 
+---
+
+MediaPipeはBazarevskyらがCVPR2019で発表したオープンソースの機械学習用フレームワークで，そこで用いられている手認識機能は，single-shot手のひら認識アルゴリズムとlandmark認識モデルが組み合わされたものです（[Google AI Blog: On-Device, Real-Time Hand Tracking with MediaPipe](https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html)）
+
+[![Image from Gyazo](https://i.gyazo.com/bb83a5b6ca5f6ca7865836d9f1e9e3d7.jpg)](https://gyazo.com/bb83a5b6ca5f6ca7865836d9f1e9e3d7)
+
+手の形状は以下の各ランドマークの座標として取得できます．毎フレーム推論が走り，cv座標での値が取得できます．
+
+[![Image from Gyazo](https://i.gyazo.com/d4a41006b4110401a6fb593da4c4d544.png)](https://gyazo.com/d4a41006b4110401a6fb593da4c4d544)
+
+返ってくる`landmark`のオブジェクトは以下のようにして座標の`float`が取り出せます
+
+```python
+for hand_idx, landmarks in enumerate(multi_hand_landmarks):
+    for point_idx, points in enumerate(landmarks.landmark):
+        print(f"Hand: {hand_idx}, {HAND_LANDMARK_NAMES[point_idx]},"
+                      + f"x:{points.x} y:{points.y} z:{points.z}")
+```
+
+この時の`HAND_LANDMARK_NAMES`は，以下のような順番になっています．
+
+```python
+HAND_LANDMARK_NAMES = [
+    "wrist",
+    "thumb_1",
+    "thumb_2",
+    "thumb_3",
+    "thumb_4",
+    "index_1",
+    "index_2",
+    "index_3",
+    "index_4",
+    "middle_1",
+    "middle_2",
+    "middle_3",
+    "middle_4",
+    "ring_1",
+    "ring_2",
+    "ring_3",
+    "ring_4",
+    "pinky_1",
+    "pinky_2",
+    "pinky_3",
+    "pinky_4"
+]
+```
+
+今回はこのMediaPipeによるリアルタイム手認識を用いて何かしらのインタラクティブ作品やWekinator等を用いるジェスチャ認識などのためのOpen Sound Controlでのデータ送信をプロトタイプします．
+
 ## スクリプト
 
 ```python
