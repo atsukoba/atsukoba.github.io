@@ -21,7 +21,7 @@
     "next-sass": "^1.0.3",
     "next-seo": "^4.20.0",
     "next-sitemap": "^1.5.10",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "raw-loader": "^4.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
