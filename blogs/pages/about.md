@@ -22,9 +22,13 @@ Fundamental Information Technology Engineer Examination (2017/11)
 
 ## Honors & Awards
 
+**アジアデジタルアート大賞展FUKUOKA 2021, 一般カテゴリー インタラクティブアート部門入賞** “Compressed ideograph-visualized”, スコットアレン, 高石圭人, 石井飛鳥, 渋谷和史, リボクカン, 小林篤矢, 徳井直生
+
+**やまなしメディア芸術アワード2021, Y-SILVER （優秀賞）**, “Compressed ideograph-visualized”, Scott Allen, 高石圭人, 石井飛鳥, 渋谷和史, リボクカン, 小林篤矢, 徳井直生
+
 **優秀卒業プロジェクト, 慶應義塾大学湘南藤沢キャンパス 2020 年度**
 
-https://www.sfc.keio.ac.jp/doc/sotsupuro2011-2020.pdf
+<https://www.sfc.keio.ac.jp/doc/sotsupuro2011-2020.pdf>
 
 **3rd Prize, Excellent Student Paper Award, IEEE 1st Global Conference on Life Sciences and Technologies (LifeTech 2019)**
 
@@ -36,11 +40,11 @@ Data Analysis (image recognition, image processing) Competition for students hel
 
 **Digital Innovators Grand Prix 8, First runner-up**
 
-honor descriptionPresentation Title "Book Gym: Providing Extraordinary Reading by Redefined Value of Reading" <http://dmc-lab.sfc.keio.ac.jp/dig7/> (3/2019)
+Presentation Title "Book Gym: Providing Extraordinary Reading by Redefined Value of Reading" <http://dmc-lab.sfc.keio.ac.jp/dig7/> (3/2019)
 
 **Digital Innovators Grand Prix 7, First runner-up**
 
-honor descriptionPresentation Title "Improve Plan of Japanese Restaurant Review System Via Semantic Vectorization of Review Text" <http://dmc-lab.sfc.keio.ac.jp/dig7/> (9/2018)
+Presentation Title "Improve Plan of Japanese Restaurant Review System Via Semantic Vectorization of Review Text" <http://dmc-lab.sfc.keio.ac.jp/dig7/> (9/2018)
 
 ---
 
