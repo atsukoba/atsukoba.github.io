@@ -5,6 +5,7 @@ import Card from "../../components/Card";
 import Container from "../../components/Container";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import MetaData  from "../../components/MetaData";
 
 const Index = ({ data, title, description }) => {
   const router = useRouter();
@@ -54,6 +55,13 @@ const Index = ({ data, title, description }) => {
 
   return (
     <Container>
+      <MetaData
+        title={"Atsuya Kobayashi's Blog Posts"}
+        description={"tech blogs by Atsuya Kobayashi (小林篤矢)"}
+        postType={""}
+        slug={""}
+        keyVisual={"/images/me.jpg"}
+      />
       <h1>Blog ✍</h1>
       <span>Tag:&nbsp;</span>
       <select

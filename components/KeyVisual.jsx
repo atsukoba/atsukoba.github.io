@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../sass/style.scss";
 
 const KeyVisual = (props) => {
   const style = {

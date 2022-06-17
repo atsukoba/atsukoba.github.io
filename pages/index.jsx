@@ -4,6 +4,7 @@ import Link from "next/link";
 import Container from "../components/Container";
 import { format } from "../helpers/dateFormat";
 import Card from "../components/Card";
+import MetaData from "../components/MetaData"
 
 const Index = ({ data, title, description }) => {
   const ListItems = data
@@ -15,6 +16,13 @@ const Index = ({ data, title, description }) => {
 
   return (
     <Container>
+      <MetaData
+        title={"Atsuya Kobayashi"}
+        description={"Personal website, profile, tech blogs by Atsuya Kobayashi (小林篤矢)"}
+        postType={""}
+        slug={""}
+        keyVisual={"/images/me.jpg"}
+      />
       <div>
         <ul className="card_container">
           {ListItems.map((blog, i) => (

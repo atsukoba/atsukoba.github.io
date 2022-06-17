@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Container from "./Container";
-import "../sass/style.scss";
 import {
   faTwitter,
   faGithub,

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../sass/style.scss";
 
 const Breadcrumb = (props) => {
   return (

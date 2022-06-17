@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../sass/style.scss";
 import { NextSeo } from "next-seo";
 
 const MetaData = ({
