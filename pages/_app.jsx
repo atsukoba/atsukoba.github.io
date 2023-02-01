@@ -1,4 +1,3 @@
-import next from "next";
 import { Fragment } from "react";
 import Head from "next/head";
 import "../sass/style.scss";
@@ -19,7 +18,10 @@ function MyApp({ Component, pageProps }) {
           content="telephone=no,address=no,email=no"
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="google-site-verification" content="cI4es2OEvugGtOnNFAZf8XS1notJSgqSMmUlprSqjaM" />
+        <meta
+          name="google-site-verification"
+          content="cI4es2OEvugGtOnNFAZf8XS1notJSgqSMmUlprSqjaM"
+        />
         <title>Atsuya Kobayashi</title>
       </Head>
       <Header />

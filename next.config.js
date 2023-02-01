@@ -1,5 +1,4 @@
-const withSass = require("@zeit/next-sass");
-module.exports = withSass({
+module.exports = {
   async redirects() {
     return [
       {
@@ -9,7 +8,6 @@ module.exports = withSass({
       },
     ];
   },
-
   sassLoaderOptions: {
     sourceMap: true,
   },
@@ -27,4 +25,4 @@ module.exports = withSass({
     });
     return config;
   },
-});
+};
