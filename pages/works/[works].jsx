@@ -7,6 +7,7 @@ import Breadcrumb from "../../components/Breadcrumb";
 import MetaData from "../../components/MetaData";
 import KeyVisual from "../../components/KeyVisual";
 import { format } from "../../helpers/dateFormat";
+import rehypeRaw from "rehype-raw";
 
 const Work = ({ content, data }) => {
   return (
@@ -23,8 +24,8 @@ const Work = ({ content, data }) => {
           <Breadcrumb
             className="article__breadcrumb"
             pathes={[
-              { url: "/", title: "work" },
-              { url: `/work/${data.slug}`, title: data.title },
+              { url: "/", title: "works" },
+              { url: `/works/${data.slug}`, title: data.title },
             ]}
           />
           <KeyVisual imageFileName={data.keyVisual} />
@@ -37,7 +38,7 @@ const Work = ({ content, data }) => {
           <div className="article__tags">
             {data.tags &&
               data.tags.map((tag, l) => (
-                <a href={`/work/?tag=${encodeURIComponent(tag)}`}>
+                <a href={`/works/?tag=${encodeURIComponent(tag)}`}>
                   <span className="card__post__tag" key={l}>
                     {tag}
                   </span>
@@ -51,6 +52,7 @@ const Work = ({ content, data }) => {
           <ReactMarkdown
             escapeHtml={false}
             children={content}
+            rehypePlugins={[rehypeRaw]}
             renderers={{ code: CodeBlock }}
             className="article__contents"
           />

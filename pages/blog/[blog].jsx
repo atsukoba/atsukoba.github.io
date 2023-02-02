@@ -8,6 +8,7 @@ import Breadcrumb from "../../components/Breadcrumb";
 import MetaData from "../../components/MetaData";
 import KeyVisual from "../../components/KeyVisual";
 import { format } from "../../helpers/dateFormat";
+import rehypeRaw from "rehype-raw";
 
 const Blog = ({ content, data }) => {
   return (
@@ -50,6 +51,7 @@ const Blog = ({ content, data }) => {
           <ReactMarkdown
             escapeHtml={false}
             children={content}
+            rehypePlugins={[rehypeRaw]}
             renderers={{ code: CodeBlock }}
             className="article__contents"
           />
