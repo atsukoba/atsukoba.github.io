@@ -38,11 +38,11 @@ const Work = ({ content, data }) => {
           <div className="article__tags">
             {data.tags &&
               data.tags.map((tag, l) => (
-                <a href={`/works/?tag=${encodeURIComponent(tag)}`}>
-                  <span className="card__post__tag" key={l}>
-                    {tag}
-                  </span>
-                </a>
+                <span className="card__post__tag" key={l}>
+                  {tag}
+                </span>
+                // <a disabled href={`/works/?tag=${encodeURIComponent(tag)}`}>
+                // </a>
               ))}
           </div>
           <p className="article__description">{data.description}</p>
@@ -68,7 +68,9 @@ export async function getStaticProps(context) {
   const content = await import(`../../portfolio/${works}.md`);
   const data = matter(content.default);
   console.dir(data);
-  data.data.date = data.data.date.toJSON();
+  if (data.data.date.toJSON) {
+    data.data.date = data.data.date.toJSON();
+  }
   return {
     props: {
       content: data.content,

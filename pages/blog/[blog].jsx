@@ -70,7 +70,9 @@ export async function getStaticProps(context) {
   const content = await import(`../../blogs/${blog}.md`);
   const data = matter(content.default);
   console.dir(data);
-  data.data.date = data.data.date.toJSON();
+  if (data.data.date.toJSON) {
+    data.data.date = data.data.date.toJSON();
+  }
   return {
     props: {
       content: data.content,
