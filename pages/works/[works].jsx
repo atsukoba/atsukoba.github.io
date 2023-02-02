@@ -16,7 +16,6 @@ const Work = ({ content, data }) => {
         description={data.description}
         postType={"work"}
         slug={data.slug}
-        description={data.description}
         keyVisual={data.keyVisual}
       />
       <Container>
@@ -51,7 +50,7 @@ const Work = ({ content, data }) => {
 
           <ReactMarkdown
             escapeHtml={false}
-            source={content}
+            children={content}
             renderers={{ code: CodeBlock }}
             className="article__contents"
           />

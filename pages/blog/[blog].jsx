@@ -17,7 +17,6 @@ const Blog = ({ content, data }) => {
         description={data.description}
         postType={"blog"}
         slug={data.slug}
-        description={data.description}
         keyVisual={data.keyVisual}
       />
       <Container>
@@ -50,7 +49,7 @@ const Blog = ({ content, data }) => {
 
           <ReactMarkdown
             escapeHtml={false}
-            source={content}
+            children={content}
             renderers={{ code: CodeBlock }}
             className="article__contents"
           />

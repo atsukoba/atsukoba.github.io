@@ -11,7 +11,7 @@ function About({ content, data }) {
         <div className="about__photo"></div>
         <ReactMarkdown
           escapeHtml={false}
-          source={content}
+          children={content}
           renderers={{ code: CodeBlock }}
           className="article__contents"
         />
