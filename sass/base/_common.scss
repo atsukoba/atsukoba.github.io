@@ -64,7 +64,6 @@ img {
 
 .key-visual {
   width: 100vw;
-  height: 33vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,6 +74,7 @@ img {
   }
   @include breakpoint("<=small") {
     margin-left: -15px;
+    height: 50vw;
   }
 }
 

@@ -31,7 +31,10 @@ Our lab: <https://cclab.sfc.keio.ac.jp/2020/06/16/exsampling/>
 
 ## Demo videos
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/429487962" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-video-wrapper">
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/429487962" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+</div>
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/429487994" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
+<div class="iframe-video-wrapper">
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/429487994" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+</div>
