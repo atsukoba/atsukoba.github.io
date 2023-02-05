@@ -4,6 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - Design: <https://www.figma.com/file/ya8XIBQvgNV6WWBVRg31OV/atsuya.xyz?node-id=0%3A1>
 
+## Domain
+
+atsuya.xyz
+
 ## contents type
 
 - blog post
