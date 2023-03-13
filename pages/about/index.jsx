@@ -10,9 +10,8 @@ function About({ content, data }) {
         <h1>About Me</h1>
         <div className="about__photo"></div>
         <ReactMarkdown
-          escapeHtml={false}
           children={content}
-          renderers={{ code: CodeBlock }}
+          components={{ code: CodeBlock }}
           className="article__contents"
         />
       </article>

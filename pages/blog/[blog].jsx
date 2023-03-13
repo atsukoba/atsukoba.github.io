@@ -49,10 +49,9 @@ const Blog = ({ content, data }) => {
           <hr />
 
           <ReactMarkdown
-            escapeHtml={false}
             children={content}
             rehypePlugins={[rehypeRaw]}
-            renderers={{ code: CodeBlock }}
+            components={{ code: CodeBlock }}
             className="article__contents"
           />
         </article>

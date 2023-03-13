@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: center;
+  column-gap: 7.5px;  // each element has 33%|50% - 5px width
 }
 
 .card {

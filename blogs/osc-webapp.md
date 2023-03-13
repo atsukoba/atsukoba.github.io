@@ -8,7 +8,7 @@ tags: [Open Sound Control, nodejs, express]
 keyVisual: https://i.gyazo.com/0ec1a0958d7e3a96e45e0503ca9497ad.png
 ---
 
-誰でも osc を通して作品に参加できるような web アプリケーションをプロトタイピングしました。[リポジトリはこちら]("https://github.com/atsukoba/osc-webapp")。
+誰でも osc を通して作品に参加できるような web アプリケーションをプロトタイピングしました。[リポジトリ]("https://github.com/atsukoba/osc-webapp")。
 
 ## OSC (Open Sound Control)
 
@@ -29,7 +29,7 @@ nodejs/express でサーバを立てて，軽くて双方向に使える websock
 
 軽くフロントを書いてデモをつくり，簡単なボタンとそのボタンに対応したメッセージをローカルの osc に送れるかを確認する。
 
-![alt](oscweb_screenshots.png 'デモのスクリーンショット')
+![alt](/images/works/osc-webapp.png 'デモのスクリーンショット')
 
 ### express
 
