@@ -38,3 +38,22 @@ Our lab: <https://cclab.sfc.keio.ac.jp/2020/06/16/exsampling/>
 <div class="iframe-video-wrapper">
     <iframe title="vimeo-player" src="https://player.vimeo.com/video/429487994" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 </div>
+
+BibTex
+
+```bibtex
+@inproceedings{kobayashi_NIME20_58,
+  author = {Kobayashi, Atsuya and Anzai, Reo and Tokui, Nao},
+  title = {ExSampling: a system for the real-time ensemble performance of field-recorded environmental sounds},
+  pages = {305--308},
+  booktitle = {Proceedings of the International Conference on New Interfaces for Musical Expression},
+  editor = {Michon, Romain and Schroeder, Franziska},
+  year = {2020},
+  month = jul,
+  publisher = {Birmingham City University},
+  address = {Birmingham, UK},
+  issn = {2220-4806},
+  doi = {10.5281/zenodo.4813371},
+  url = {https://www.nime.org/proceedings/2020/nime2020_paper58.pdf}
+}
+```
