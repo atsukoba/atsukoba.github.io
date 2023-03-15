@@ -29,7 +29,7 @@ Please cite as
 
 _Kobayashi, Atsuya, Ishino, Ryogo, Nobusue, Ryuku, Inoue, Takumi, Okazaki, Keisuke, Sawa, Shoma, & Tokui, Nao. (2022, September 17). MR4MR: Mixed Reality for Melody Reincarnation. Proceedings of the 3rd Conference on AI Music Creativity. The 3rd Conference on AI Music Creativity (AIMC 2022). https://doi.org/10.5281/zenodo.7088357_
 
-Bibtex
+### Bibtex
 
 ```bibtex
 @inproceedings{kobayashi_mr4mr2022,

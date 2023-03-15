@@ -8,16 +8,19 @@ tags: [Music, AI, Works, Performance]
 keyVisual: /images/works/improvise-chain.jpg
 ---
 
-[![Image from Gyazo](https://i.gyazo.com/c20911da645271b5352a78bce9a21d67.jpg)](https://gyazo.com/c20911da645271b5352a78bce9a21d67)
+<div class="iframe-video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wiFhfswgsMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 This work was exhibited on ‘MUSES EX MACHINA’ by TOKUI Nao Computational Creativity Lab, Keio University, November 14, 2022 -- January 15, 2023, at NTT Intercommunication Center [ICC], Tokyo.
 
 <https://www.ntticc.or.jp/en/exhibitions/2022/tokui-nao-computational-creativity-lab-keio-university/>
 
-
 ## Concept of this Work
 
 This work is an audiovisual installation artwork of autonomous musical performance using artificial intelligence technology, designed to provide the audience with an experience exploring the differences between human and AI-based virtual musicians.
+
+[![Image from Gyazo](https://i.gyazo.com/c20911da645271b5352a78bce9a21d67.jpg)](https://gyazo.com/c20911da645271b5352a78bce9a21d67)
 
 Using a transformer decoder, we developed a four-track (melody, bass, chords and accompaniment, and drums) symbolic music generation model, which generates each track in real-time to create an endless chain of phrases.
 
