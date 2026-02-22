@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[771],{1362:(n,e,_)=>{"use strict";_.r(e),_.d(e,{default:()=>s});var u=_(3798),r=_(8148);let s=function(){return(0,u.jsx)(r.A,{children:(0,u.jsx)("h1",{children:"CV"})})}},2403:(n,e,_)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/en/cv",function(){return _(1362)}])}},n=>{n.O(0,[636,593,792],()=>n(n.s=2403)),_N_E=n.O()}]);

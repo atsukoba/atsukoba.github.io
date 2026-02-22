@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[615],{924:(n,_,e)=>{"use strict";e.r(_),e.d(_,{default:()=>s});var u=e(3798),r=e(8148);let s=function(){return(0,u.jsx)(r.A,{children:(0,u.jsx)("h1",{children:"CV"})})}},2769:(n,_,e)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/cv",function(){return e(924)}])}},n=>{n.O(0,[636,593,792],()=>n(n.s=2769)),_N_E=n.O()}]);
