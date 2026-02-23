@@ -5,28 +5,28 @@
 
 ## Blog posts
 
-- [AWS CDK クロスリージョンスタックで Lambda@Edge の更新に詰まった話](https://www.atsuya.xyz/blog/aws-cdk-crossregion-lambda-edge)
-- [「Doc2Vecによる文書ベクトル推論の安定化について」を書きました。](https://www.atsuya.xyz/blog/doc2vec-sansan-blog)
 - [Doc2VecとOptunaを使ったSVMでのテキスト分類を作ってみた](https://www.atsuya.xyz/blog/doc2vec-svm-sentenceclassification)
+- [「Doc2Vecによる文書ベクトル推論の安定化について」を書きました。](https://www.atsuya.xyz/blog/doc2vec-sansan-blog)
+- [JupyterLabのExtensionメモ](https://www.atsuya.xyz/blog/jlab-ext)
+- [bashプロンプトメモ](https://www.atsuya.xyz/blog/ps1)
 - [DockerでRstanが使えるJupyterLabのサーバーを建てる](https://www.atsuya.xyz/blog/docker-r-jupyterlab)
 - [herokuでPython製LINEbot+WebAppをCIする](https://www.atsuya.xyz/blog/flask-line-bot-heroku)
-- [愛犬が走るゲームを Tripo-DG と ThreeJS でつくる](https://www.atsuya.xyz/blog/fuwa-run-2025)
-- [iOSプロジェクトへのFirebase導入で詰まったことメモ](https://www.atsuya.xyz/blog/ios-firebase)
-- [JupyterLabのExtensionメモ](https://www.atsuya.xyz/blog/jlab-ext)
 - [任天堂SwitchのジョイコンをPython経由で楽器にする](https://www.atsuya.xyz/blog/joycon-driver)
+- [iOSプロジェクトへのFirebase導入で詰まったことメモ](https://www.atsuya.xyz/blog/ios-firebase)
+- [MediaPipeによるお手軽手認識とリアルタイムおもちゃのためのOSC連携](https://www.atsuya.xyz/blog/media-pipe-osc)
+- [Max for Live でのソートアルゴリズム可視化・ sonification プラグイン](https://www.atsuya.xyz/blog/sonify-sorts)
+- [ブラウザでリアルタイムなYOLO推論](https://www.atsuya.xyz/blog/yolov8-wasm-browser)
+- [愛犬が走るゲームを Tripo-DG と ThreeJS でつくる](https://www.atsuya.xyz/blog/fuwa-run-2025)
+- [Ultralytics の SAM2 で狭い部屋でも合成演奏動画を作る](https://www.atsuya.xyz/blog/ultralytics-sam-instrument-play)
+- [AWS CDK クロスリージョンスタックで Lambda@Edge の更新に詰まった話](https://www.atsuya.xyz/blog/aws-cdk-crossregion-lambda-edge)
 - [Jupyter NotebookのCustom CSS](https://www.atsuya.xyz/blog/jupyterstyle)
 - [Wikipediaから検索するLINE botを作った](https://www.atsuya.xyz/blog/line-wikipedia)
-- [MediaPipeによるお手軽手認識とリアルタイムおもちゃのためのOSC連携](https://www.atsuya.xyz/blog/media-pipe-osc)
 - [複数の.ipynb をまとめて目次生成](https://www.atsuya.xyz/blog/nb-table-generator)
 - [nodejsでローカルにoscを送るwebアプリケーションを作る (SocketIO, Express)](https://www.atsuya.xyz/blog/osc-webapp)
 - [Processingのvscode開発環境を構築(Mac)](https://www.atsuya.xyz/blog/processing-on-vscode)
-- [bashプロンプトメモ](https://www.atsuya.xyz/blog/ps1)
 - [pykakasi, mecab-python3等のメモ。](https://www.atsuya.xyz/blog/pykakasi-mecab-python)
-- [Max for Live でのソートアルゴリズム可視化・ sonification プラグイン](https://www.atsuya.xyz/blog/sonify-sorts)
 - [ブラウザ上で録音できるツールをflask + recorder.js + p5.js on TypeScript で作る](https://www.atsuya.xyz/blog/ts-p5-webapp)
-- [Ultralytics の SAM2 で狭い部屋でも合成演奏動画を作る](https://www.atsuya.xyz/blog/ultralytics-sam-instrument-play)
 - [WordPressのTips（ログイン画面変更・最適化などのメモ）](https://www.atsuya.xyz/blog/wordpress-tips)
-- [ブラウザでリアルタイムなYOLO推論](https://www.atsuya.xyz/blog/yolov8-wasm-browser)
 
 ## Works / Portfolio
 
