@@ -22,7 +22,7 @@
 - [任天堂SwitchのジョイコンをPython経由で楽器にする](https://www.atsuya.xyz/blog/joycon-driver)
 - [iOSプロジェクトへのFirebase導入で詰まったことメモ](https://www.atsuya.xyz/blog/ios-firebase)
 - [MediaPipeによるお手軽手認識とリアルタイムおもちゃのためのOSC連携](https://www.atsuya.xyz/blog/media-pipe-osc)
-- [Max for Live でのソートアルゴリズム可視化・ sonification プラグイン](https://www.atsuya.xyz/blog/sonify-sorts)
+- [ソートアルゴリズム可視化/可聴化Max for Liveデバイス Soni.f(y, sorts)](https://www.atsuya.xyz/blog/sonify-sorts)
 - [ブラウザでリアルタイムなYOLO推論](https://www.atsuya.xyz/blog/yolov8-wasm-browser)
 - [愛犬が走るゲームを Tripo-SG と ThreeJS でつくる](https://www.atsuya.xyz/blog/fuwa-run-2025)
 - [S3 Vectors でお手軽なマルチモーダル楽曲検索を試す](https://www.atsuya.xyz/blog/s3-vectors-multimodal-music-search)
