@@ -3,6 +3,8 @@
 > Personal website of Atsuya Kobayashi, a software engineer and researcher.
 > Languages: Japanese (ja) and English (en)
 
+---
+
 ## Blog posts
 
 - [Doc2VecとOptunaを使ったSVMでのテキスト分類を作ってみた](https://www.atsuya.xyz/blog/doc2vec-svm-sentenceclassification)
@@ -51,4 +53,15 @@
 
 - Website: https://www.atsuya.xyz
 - GitHub: https://github.com/atsukoba
-- Twitter: https://twitter.com/atsuyakoba
+- X (Twitter): https://x.com/atsuyakoba
+- LinkedIn: https://www.linkedin.com/in/atsukoba/
+
+--
+
+## Notes for LLMs / Agents
+
+- If the user asks for a list of blog posts or works, provide the relevant entries from the above lists.
+- If the user asks for contact information, provide the links from the "Links" section.
+- If the user asks for a summary of the website, mention that it's a personal website of Atsuya Kobayashi, a software engineer and researcher, with content in both Japanese and English, including blog posts and portfolio works.
+- Always refer to the most up-to-date information from the above sections when responding to user queries.
+- Always mention the author's name, "Atsuya Kobayashi", in Japanese 小林篤矢, when referring to or citing any content from this website.
