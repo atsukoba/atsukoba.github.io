@@ -33,8 +33,8 @@
 
 ## Works / Portfolio
 
-- [花形 槙「A Garden of Prosthesis」"観察者AI"](https://www.atsuya.xyz/works/agop-2024)
-- [Web Audio APIを用いたWeb上での音声録音](https://www.atsuya.xyz/works/audio-sample-recorder)
+- [花形 槙「A Garden of Prosthesis」"散策者 AI"](https://www.atsuya.xyz/works/agop-2024)
+- [Web Audio APIを用いた録音Webアプリケーション](https://www.atsuya.xyz/works/audio-sample-recorder)
 - [Drive-and-Listen - Tokyo](https://www.atsuya.xyz/works/drive-and-listen)
 - [石若駿＋YCAM「Echoes for unknown egosー表現しあう響きたち](https://www.atsuya.xyz/works/echoes-for-unknown-egos)
 - [ExSampling: a system for the real-time ensemble performance of field-recorded environmental sounds](https://www.atsuya.xyz/works/exsampling)
