@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://atsuya.xyz
+Host: https://www.atsuya.xyz
 
 # Sitemaps
-Sitemap: https://atsuya.xyz/sitemap.xml
+Sitemap: https://www.atsuya.xyz/sitemap.xml
