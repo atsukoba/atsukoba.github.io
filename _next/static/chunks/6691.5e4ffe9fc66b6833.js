@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6691],{6691:(e,t,s)=>{s.r(t),s.d(t,{default:()=>n});var u=s(3798),l=s(1359);function n(e){let{link:t}=e,s=function(e){let t=e.match(/\/status\/(\d+)/);return t?t[1]:e}(null!=t?t:"");return(0,u.jsx)("div",{className:"my-4 flex justify-center","data-theme":"light",children:(0,u.jsx)(l.Y,{id:s})})}}}]);

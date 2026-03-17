@@ -37,12 +37,12 @@
 ## Works / Portfolio
 
 - [花形 槙「A Garden of Prosthesis」"散策者 AI"](https://www.atsuya.xyz/works/agop-2024)
-- [Web Audio APIを用いた録音Webアプリケーション](https://www.atsuya.xyz/works/audio-sample-recorder)
 - [Drive-and-Listen: Turning driving scenery into ambient music - Tokyo](https://www.atsuya.xyz/works/drive-and-listen)
 - [石若駿＋YCAM「Echoes for unknown egosー表現しあう響きたち "Agents"](https://www.atsuya.xyz/works/echoes-for-unknown-egos)
 - [ExSampling: a system for the real-time ensemble performance of field-recorded environmental sounds](https://www.atsuya.xyz/works/exsampling)
 - [faceWah: 顔の傾きに基づいてワウエフェクトをかける](https://www.atsuya.xyz/works/faceWah)
 - [Feature-Dive: An interactive search application for audio and symbol music features](https://www.atsuya.xyz/works/feature-dive)
+- [Improvise+=Chain [Interactive]: System for Real-Time Performance with GPT](https://www.atsuya.xyz/works/improvise-chain-interactive)
 - [Improvise+=Chain: Listening to the Ensemble Improvisation of an Autoregressive Generative Model](https://www.atsuya.xyz/works/improvise-chain)
 - [Linguitone - Linguistic Guitar Tone Processing System](https://www.atsuya.xyz/works/linguitone)
 - [MemoryBody: デジタルな記憶を身に纏う](https://www.atsuya.xyz/works/memorybody)
