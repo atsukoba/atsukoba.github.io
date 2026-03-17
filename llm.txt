@@ -51,6 +51,9 @@
 - [Orphe Track Effects - スマートシューズを用いたサウンドエフェクトのプロトタイピング](https://www.atsuya.xyz/works/orphe)
 - [osc-webapp: WebからOSCメッセージを受信するためのシンプルなWebコントローラー](https://www.atsuya.xyz/works/osc-webapp)
 - [x-sampling: GANを用いたサンプルサウンドの変換](https://www.atsuya.xyz/works/x-sampling-gan)
+- [Decoding Relative Pitch Imagery Using Functional Connectivity: An Electroencephalographic Study](https://ieeexplore.ieee.org/abstract/document/8884007)
+- [花形 槙「エルゴノミクス胚・プロトセル」 歩行エージェント](https://autumnmeteorite.jp/ja/2025/program/ergonomicembryo)
+- [Novice-Centered Application Design for Music Creation](https://dl.acm.org/doi/10.1145/3656156.3663695)
 
 ## Links
 
